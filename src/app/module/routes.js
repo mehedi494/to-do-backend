@@ -14,6 +14,12 @@ router.get(
   /* auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN), */
   Controller.getAllContacts
 );
+router.get(
+  '/:id',
+  /* validateRequest(UserValidation.createStudentZodSchema), */
+  /* auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN), */
+  Controller.getSingleContact
+);
 router.patch(
   '/:_id',
   /* validateRequest(UserValidation.createStudentZodSchema), */

@@ -22,6 +22,15 @@ try {
   res.send (error)
 }
 }
+const getSingleContact = async(req,res)=>{
+try {
+  const result = await Service.getSingleContact(req.params)
+  console.log(result);
+  res.json(result)
+} catch (error) {
+  res.send (error)
+}
+}
 const updateContact = async(req,res)=>{
 try {
   console.log(req.params,req.body);
@@ -43,17 +52,8 @@ console.log(req.params);
   res.send (error)
 }
 }
-// const setFavourite = async(req,res)=>{
-// try {
-// console.log(req.params);
-//   const result = await Service.setFavourite(req.params,req.body)
-//   console.log(result);
-//   res.json(result)
-// } catch (error) {
-//   res.send (error)
-// }
-// }
+
 
 module.exports.Controller={
-  createContacts,getAllContacts,updateContact,deleteContact,
+  createContacts,getAllContacts,getSingleContact,updateContact,deleteContact,
 }

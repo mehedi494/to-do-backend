@@ -12,6 +12,12 @@ const getAllContacts =async()=>{
     const result = await Contacts.find()
     return result 
 }
+const getSingleContact =async(payload)=>{
+  const {id}=payload
+
+    const result = await Contacts.findById(id)
+    return result 
+}
 const updateContact =async(_id,payload)=>{
     const result = await Contacts.updateOne(_id,payload)
     return result 
@@ -23,5 +29,5 @@ const deleteContact =async(_id)=>{
 
 
 module.exports.Service ={
-  createContacts,getAllContacts,updateContact,deleteContact
+  createContacts,getAllContacts,getSingleContact,updateContact,deleteContact
 }
