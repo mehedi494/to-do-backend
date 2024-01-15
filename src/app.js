@@ -2,6 +2,7 @@
 const cors = require("cors");
 const express= require ("express");
 const httpStatus= require( "http-status");
+const { Routes } = require("./app/module/routes");
 // import routes from "./app/routes";
 
 const app = express();
@@ -14,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // app.use('/api/v1/users/', UserRoutes);
 // app.use('/api/v1/academic-semesters', AcademicSemesterRoutes);
-// app.use("/api/v1", routes);
+app.use("/api/v1",Routes );
 
 // Testing
 app.get('/', async (req, res) => {
@@ -31,12 +32,12 @@ app.use((req, res, next) => {
   res.status(httpStatus.NOT_FOUND).json({
     success: false,
     message: "Not Found",
-    errorMessages: [
+    /* errorMessages: [
       {
         path: req.originalUrl,
         message: "API Not Found",
       },
-    ],
+    ], */
   });
   next();
 });
