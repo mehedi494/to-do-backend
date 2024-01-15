@@ -3,12 +3,13 @@
 
 const mongoose = require('mongoose');
 const  app= require( "./app");
-require("dotenv").config()
 
+require("dotenv").config()
+const mongoURI = process.env.MONGODB_URI;
 async function bootstrap() {
   try {
-    
-    await mongoose.connect(process.env.DATABASE_URL);
+    console.log(typeof(mongoURI));
+    await mongoose.connect(`${mongoURI}`);
     console.log(`🛢   Database is connected successfully`);
 
     app.listen(process.env.PORT || 5000 , () => {
