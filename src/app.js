@@ -20,7 +20,7 @@ app.use("/api/v1",Routes );
 // Testing
 app.get('/', async (req, res) => {
 
-  res.send("hello");
+  res.send("hello world");
   // throw new Error('Testing Error logger')
 })
 
