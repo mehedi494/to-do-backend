@@ -1,18 +1,64 @@
-import React from "react";
-import { CiSearch } from "react-icons/ci";
-import { FaAngleDown, FaArrowRightLong } from "react-icons/fa6";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { FaDiscord } from "react-icons/fa";
+import React, { useState } from "react";
 import { BsTwitterX } from "react-icons/bs";
-import { FaMedium } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
-import { FaTelegramPlane } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
+import { FaDiscord, FaTelegramPlane, FaYoutube } from "react-icons/fa";
+import { FaAngleDown, FaArrowRightLong, FaMedium } from "react-icons/fa6";
+import { IoMdClose } from "react-icons/io";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 import { Link } from "react-router-dom";
 import img from "../../../assets/logo.webp";
+import HamBurger from "./HamBurgerMenu";
 import NestedMenu from "./NestedMenu";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const smallDeviceMenu = [
+    {
+      menuText: "Home",
+      path: "/",
+    },
+    {
+      menuText: "Explore",
+      path: "/",
+      isAccordion:true,
+      subMenu: [
+        { subMenuText: "Gelios Explorer", path: "/#" },
+        { subMenuText: "Bridge BTC/wBTC", path: "/#" },
+        { subMenuText: "Run a node", path: "/#" },
+        { subMenuText: "DAO Model", path: "/#" },
+      ],
+    },
+    {
+      menuText: "Community",
+      path: "/",
+      isAccordion:true,
+      subMenu: [
+        { subMenuText: "Discord", path: "/#", preIcon: <FaDiscord /> },
+        { subMenuText: "Twitter", path: "/#", preIcon: <BsTwitterX /> },
+        {
+          subMenuText: "Telegram",
+          link: "/#",
+          preIcon: <FaTelegramPlane />,
+        },
+        { subMenuText: "Youtube", path: "/#", preIcon: <FaYoutube /> },
+        { subMenuText: "Medium", path: "/#", preIcon: <FaMedium /> },
+      ],
+    },
+    {
+      menuText: "Ecosystem",
+      path: "/",
+    },
+    {
+      menuText: "Docs",
+      path: "/",
+    },
+  ];
+  const toggleMenu = () => {
+    console.log("object");
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div>
       <header className="bg-[#3e3e3e]   shadow-md">
@@ -43,10 +89,10 @@ export default function Header() {
             <NestedMenu
               menuText="Explore"
               subMenu={[
-                { subMenuText: "Gelios Explorer", link: "/#" },
-                { subMenuText: "Bridge BTC/wBTC", link: "/#" },
-                { subMenuText: "Run a node", link: "/#" },
-                { subMenuText: "DAO Model", link: "/#" },
+                { subMenuText: "Gelios Explorer", path: "/#" },
+                { subMenuText: "Bridge BTC/wBTC", path: "/#" },
+                { subMenuText: "Run a node", path: "/#" },
+                { subMenuText: "DAO Model", path: "/#" },
               ]}
               icon={<FaAngleDown className="inline" />}
               link="/"></NestedMenu>
@@ -54,15 +100,15 @@ export default function Header() {
             <NestedMenu
               menuText="Community"
               subMenu={[
-                { subMenuText: "Discord", link: "/#", preIcon: <FaDiscord /> },
-                { subMenuText: "Twitter", link: "/#", preIcon: <BsTwitterX /> },
+                { subMenuText: "Discord", path: "/#", preIcon: <FaDiscord /> },
+                { subMenuText: "Twitter", path: "/#", preIcon: <BsTwitterX /> },
                 {
                   subMenuText: "Telegram",
                   link: "/#",
                   preIcon: <FaTelegramPlane />,
                 },
-                { subMenuText: "Youtube", link: "/#", preIcon: <FaYoutube /> },
-                { subMenuText: "Medium", link: "/#", preIcon: <FaMedium /> },
+                { subMenuText: "Youtube", path: "/#", preIcon: <FaYoutube /> },
+                { subMenuText: "Medium", path: "/#", preIcon: <FaMedium /> },
               ]}
               icon={<FaAngleDown className="inline" />}
               link="/"></NestedMenu>
@@ -84,11 +130,14 @@ export default function Header() {
             <button className="text-[#feab2d] sm:inline md:hidden lg:hidden xl:hidden inline">
               <CiSearch />
             </button>
-            <button className="text-[#feab2d] sm:inline md:inline lg:inline xl:hidden inline">
-              <RxHamburgerMenu />
+            <button
+              onClick={toggleMenu}
+              className="text-[#feab2d] sm:inline md:inline lg:inline xl:hidden  ">
+              {!isOpen?<RxHamburgerMenu />:<IoMdClose />}
             </button>
           </ul>
         </div>
+        <HamBurger isOpen={isOpen} menus={smallDeviceMenu}></HamBurger>
       </header>
     </div>
   );
