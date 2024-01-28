@@ -62,7 +62,7 @@ export default function Header() {
   return (
     <div>
       <header className="bg-[#3e3e3e]  min-w-min  shadow-md">
-        <div className="bg-[#3e3e3e] max-h-[85px]  flex justify-between   items-center max-w-8xl m-auto p-4">
+        <div className="bg-[#3e3e3e] max-h-[85px]  flex justify-between   items-center max-w-7xl m-auto p-4">
           <Link to="/">
             <div className="inline  ">
               <img className="max-w-32 min-w-32 " alt="logo" src={img} />
