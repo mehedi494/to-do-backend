@@ -21,7 +21,7 @@ export default function Header() {
     {
       menuText: "Explore",
       path: "/",
-      isAccordion:true,
+      isAccordion: true,
       subMenu: [
         { subMenuText: "Gelios Explorer", path: "/#" },
         { subMenuText: "Bridge BTC/wBTC", path: "/#" },
@@ -32,7 +32,7 @@ export default function Header() {
     {
       menuText: "Community",
       path: "/",
-      isAccordion:true,
+      isAccordion: true,
       subMenu: [
         { subMenuText: "Discord", path: "/#", preIcon: <FaDiscord /> },
         { subMenuText: "Twitter", path: "/#", preIcon: <BsTwitterX /> },
@@ -61,11 +61,11 @@ export default function Header() {
 
   return (
     <div>
-      <header className="bg-[#3e3e3e]   shadow-md">
-        <div className="bg-[#3e3e3e] min-h-22  flex justify-between   items-center max-w-8xl m-auto p-4">
+      <header className="bg-[#3e3e3e]  min-w-min  shadow-md">
+        <div className="bg-[#3e3e3e] max-h-[85px]  flex justify-between   items-center max-w-8xl m-auto p-4">
           <Link to="/">
-            <div className="inline ">
-              <img className="w-32 " alt="logo" src={img} />
+            <div className="inline  ">
+              <img className="max-w-32 min-w-32 " alt="logo" src={img} />
             </div>
           </Link>
 
@@ -123,7 +123,7 @@ export default function Header() {
               </li>
             </Link>
             <Link to="/sign-in" className="group">
-              <button className="hidden sm:hiiden md:inline sm:p-2 p-3 bg-gradient-to-r from-[#fc690b] to-[#feab2d] bg-cyan-200 rounded-xl  transition-transform transform group-hover:translate-x-1">
+              <button className="hidden sm:hiiden md:inline sm:p-2 p-3 bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl  transition-transform transform group-hover:translate-x-1">
                 Buy Entry Key <FaArrowRightLong className="inline " />
               </button>
             </Link>
@@ -133,7 +133,7 @@ export default function Header() {
             <button
               onClick={toggleMenu}
               className="text-[#feab2d] sm:inline md:inline lg:inline xl:hidden  ">
-              {!isOpen?<RxHamburgerMenu />:<IoMdClose />}
+              {!isOpen ? <RxHamburgerMenu /> : <IoMdClose />}
             </button>
           </ul>
         </div>
