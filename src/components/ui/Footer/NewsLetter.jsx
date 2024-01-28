@@ -6,7 +6,7 @@ export default function NewsLetter() {
     <div className="w-full   sm:w-10/12 md:w-10/12 mx-auto lg:w-10/12 rounded-2xl -mt-[450px]  bg-cover bg-center bg-no-repeat " style={{ backgroundImage: `url(${Bgimg})` }}>
       
    <div className='w-full sm:w-full md:w-full lg:w-10/12  h-64 flex flex-col gap-y-3 justify-center items-center mx-auto'>
-   <h1 className='text-white  text-2xl sm:4xl md:text-5xl lg:8xl'>Subscribe to Our Newsletter</h1>
+   <h1 className='font-baiJamjuree text-white  text-2xl sm:4xl md:text-5xl lg:8xl'>Subscribe to Our Newsletter</h1>
    <p className='text-white text-center font-poppins text-wrap'>  Receive exclusive updates and exciting news straight to your inbox!</p>
     <form className='max-w-lg p-4 rounded-full  bg-white ' >
      
