@@ -1,6 +1,6 @@
 import React from "react";
 import { FaRegCopyright } from "react-icons/fa";
-import footerLogo from "../../../assets/logo.webp";
+import footerLogo from "../../../assets/logo.png";
 
 
 import FooterButton from "./FooterButton";

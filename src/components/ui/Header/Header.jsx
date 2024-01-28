@@ -7,7 +7,7 @@ import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 import { Link } from "react-router-dom";
-import img from "../../../assets/logo.webp";
+import img from "../../../assets/logo.png";
 import HamBurger from "./HamBurgerMenu";
 import NestedMenu from "./NestedMenu";
 
