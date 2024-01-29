@@ -67,7 +67,7 @@ export default function Header() {
           <Link to="/">
             <div className="inline  ">
               <h1 className="text-white font-bold text-xl  min-w-32 " alt="logo" /* src={img} */>
-                BITCOIN NANO </h1>
+                BITCOINNANO </h1>
             </div>
           </Link>
 

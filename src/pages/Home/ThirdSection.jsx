@@ -14,10 +14,10 @@ export default function ThirdSection() {
             <h1 className="text-[#fd9623] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">BRIDGING BTC/ WBTC <span className="text-[#333333]">BETWEEN</span> GELIOS, BITCOIN <span className="text-[#333333]"> AND</span> EVMS</h1>
           </div>
           <div className="w-[90%]  md:w-[90%] lg:w-[45%] mx-auto">
-            <p className="text-[#727272] text-center text-xs sm:text-md ">Gelios is a dApp layer for Bitcoin, not only fostering
+            <p className="text-[#727272] text-center text-xs sm:text-md ">Bitcoin-nano is a dApp layer for Bitcoin, not only fostering
               inter-application communication but also enabling seamless
               cross-chain interaction. Users can effortlessly transfer BTC
-              (Bitcoin network) and WBTC (EVM networks) to Gelios and vice
+              (Bitcoin network) and WBTC (EVM networks) to Bitcoin-nano and vice
               versa, unlocking vast DeFi opportunities.{" "}
             </p>
           </div>

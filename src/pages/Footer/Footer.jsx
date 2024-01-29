@@ -24,11 +24,11 @@ export default function Footer() {
               className="text-white font-bold text-xl  min-w-32 "
               alt="logo" /* src={img} */
             >
-              BITCOIN NANO{" "}
+              BITCOINNANO{" "}
             </h1>
             <p className="flex items-center text-white gap-x-1 font-poppins text-sm ">
               <FaRegCopyright />
-              {year} Gelios. All Rights Reserved
+              {year} Bitcoinnano. All Rights Reserved
             </p>
           </div>
 
