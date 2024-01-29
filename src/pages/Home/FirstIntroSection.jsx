@@ -18,7 +18,7 @@ export default function FirstIntroSection() {
             THE DAPP LAYER FOR BITCOIN ECOSYSTEM
           </h1>
           <p className="text-[#333333] text-sm sm:text-md lg:text-lg  font-semibold ">
-            Designed to enhance Bitcoin capabilities, GELIOS is your gateway to
+            Designed to enhance Bitcoin capabilities, BITCOINNANO is your gateway to
             a seamlessly connected, decentralized tomorrow. The future of
             innovation starts here!
           </p>

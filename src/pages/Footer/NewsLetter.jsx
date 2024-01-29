@@ -1,5 +1,5 @@
 import React from 'react'
-import Bgimg from "../../../assets/bg_newletters.png"
+import Bgimg from "../../assets/bg_newletters.png"
 
 export default function NewsLetter() {
   return (

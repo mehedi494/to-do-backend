@@ -7,9 +7,10 @@ import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 import { Link } from "react-router-dom";
-import img from "../../../assets/logo.png";
-import HamBurger from "./HamBurgerMenu";
+// import img from "../../assets/logo.png";
 import NestedMenu from "./NestedMenu";
+import HamBurger from "./HamBurgerMenu";
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,11 +62,12 @@ export default function Header() {
 
   return (
     <div>
-      <header className="bg-[#3e3e3e]  min-w-min  shadow-md">
+      <header className="bg-[#3e3e3e]  min-w-min  shadow-md font-baiJamjuree">
         <div className="bg-[#3e3e3e] max-h-[85px]  flex justify-between   items-center max-w-7xl m-auto p-4">
           <Link to="/">
             <div className="inline  ">
-              <img className="max-w-32 min-w-32 " alt="logo" src={img} />
+              <h1 className="text-white font-bold text-xl  min-w-32 " alt="logo" /* src={img} */>
+                BITCOIN NANO </h1>
             </div>
           </Link>
 

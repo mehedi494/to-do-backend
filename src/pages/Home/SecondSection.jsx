@@ -8,7 +8,7 @@ const SecondSection = () => {
         <div className="w-full sm:w-1/2 md:w-1/2  p-8 font-baiJamjuree">
         <div className=" flex flex-col gap-y-8">
           <h1 className="text-[#fd9623] text-2xl sm:text-3xl md:text-4xl lg:text-6xl" >BTC <span className="text-[#333333]">as</span> Native Token</h1>
-          <p className="text-[#727272]">With a vision to enrich the Bitcoin ecosystem, Gelios utilizes BTC as its native token. This ensures immediate access for developers and users, guaranteeing security and stability, thereby enhancing overall functionality and user experience.</p>
+          <p className="text-[#727272]">With a vision to enrich the Bitcoin ecosystem, bitcoinnano utilizes BTC as its native token. This ensures immediate access for developers and users, guaranteeing security and stability, thereby enhancing overall functionality and user experience.</p>
         </div>
         </div>
 
@@ -31,7 +31,6 @@ const SecondSection = () => {
 
 export default SecondSection;
 
-// import intro_pattern from './your-intro-pattern-image.jpg'; // Update with the correct path
 
 // const YourComponent = () => {
 //   return (
