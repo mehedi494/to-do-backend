@@ -5,7 +5,7 @@ import introSVG from "../../assets/bitcoin-net.png";
 import introBg from "../../assets/intro_bg.png";
 import intro_pattern from "../../assets/intro_pattern.png";
 
-export default function IntroSection() {
+export default function FirstIntroSection() {
   return (
     <div
       className="bg-cover bg-center bg-no-repeat"

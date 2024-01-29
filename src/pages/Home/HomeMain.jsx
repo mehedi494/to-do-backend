@@ -1,10 +1,11 @@
 import React from "react";
-import IntroSection from "./IntroSection";
-import BtcAsNativeSection from "./BtcAsNativeSection";
+import FirstIntroSection from "./FirstIntroSection";
+import SecondSection from "./SecondSection";
 
 export default function HomeMain() {
   return <div>
-    <IntroSection></IntroSection>
-    <BtcAsNativeSection></BtcAsNativeSection>
+    <FirstIntroSection></FirstIntroSection>
+    <SecondSection></SecondSection>
+    
   </div>;
 }
