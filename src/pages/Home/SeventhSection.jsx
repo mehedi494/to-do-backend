@@ -56,6 +56,12 @@ export default function SeventhSection() {
             </div>
           ))}
         </div>
+        {/* three dot  */}
+        <div class="flex items-center justify-center gap-5 py-9">
+          <div class="w-[18px] h-[18px] rounded-md bg-gray-400 rotate-45"></div>
+          <div class="w-[22px] h-[22px] rounded-md bg-gray-600 rotate-45"></div>
+          <div class="w-[18px] h-[18px] rounded-md bg-gray-400 rotate-45"></div>
+        </div>
       </div>
     </div>
   );
