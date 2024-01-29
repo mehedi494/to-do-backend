@@ -6,7 +6,7 @@ import Footer from "../../pages/Footer/Footer";
 export default function Main(children) {
   return (
     <div>
-      <Header></Header>
+      <Header  ></Header>
       <Outlet>{children}</Outlet>
       <Footer></Footer>
     </div>

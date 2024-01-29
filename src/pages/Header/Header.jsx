@@ -61,9 +61,9 @@ export default function Header() {
   };
 
   return (
-    <div>
-      <header className="bg-[#3e3e3e]  shadow-md font-baiJamjuree">
-        <div className="bg-[#3e3e3e] max-h-[85px]  flex justify-between   items-center max-w-7xl m-auto p-4">
+    <div className="bg-[#3e3e3e]  z-20 w-full top-0 right-0  fixed ">
+      <header className="  shadow-md font-baiJamjuree">
+        <div className=" max-h-[85px]  flex justify-between   items-center max-w-7xl m-auto p-4">
           <Link to="/">
             <div className="w-[200px]  ">
               

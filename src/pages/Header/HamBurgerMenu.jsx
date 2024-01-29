@@ -10,7 +10,7 @@ const HamBurger = ({ isOpen, menus }) => {
   };
 
   return (
-    <nav className={`lg:hidden ${isOpen ? "block" : "hidden"}`}>
+    <nav className={`lg:hidden ${isOpen ? "block" : "hidden"} `}>
       <ul className="p-4 font-poppins flex flex-col gap-4 justify-start  ">
         {menus?.map((menuItem, index) =>
           menuItem.isAccordion ? (
