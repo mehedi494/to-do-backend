@@ -27,7 +27,7 @@ export default function FirstIntroSection() {
               Run a Node <FaArrowRightLong />
             </button>
             <button className="border-1 bg-cyan-200 p-4  rounded-lg text-white border-gray-600 border ">
-              Bridge to Gelios{" "}
+              Bridge to Bitcoinnano
             </button>
           </div>
         </div>

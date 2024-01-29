@@ -29,8 +29,8 @@ export default function FifthSection() {
           <p className="">
             The Entry Key is an exclusive passport, offering early developers
             privileged access to innovative features and inherent benefits of
-            Gelios. It also acts as tangible proof of eligibility for entities
-            running Gelios’ Observer Nodes, validating contributions and
+            Bitcoinnano. It also acts as tangible proof of eligibility for entities
+            running Bitcoinnano’ Observer Nodes, validating contributions and
             unlocking associated rewards.
           </p>
           <button className="w-60 bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80 rounded-lg text-white items-center flex p-4 gap-x-4 transition-transform transform hover:scale-95">

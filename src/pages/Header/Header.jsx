@@ -24,7 +24,7 @@ export default function Header() {
       path: "/",
       isAccordion: true,
       subMenu: [
-        { subMenuText: "Gelios Explorer", path: "/#" },
+        { subMenuText: "Bitcoinnano Explorer", path: "/#" },
         { subMenuText: "Bridge BTC/wBTC", path: "/#" },
         { subMenuText: "Run a node", path: "/#" },
         { subMenuText: "DAO Model", path: "/#" },
@@ -91,7 +91,7 @@ export default function Header() {
             <NestedMenu
               menuText="Explore"
               subMenu={[
-                { subMenuText: "Gelios Explorer", path: "/#" },
+                { subMenuText: "Bitcoinnano Explorer", path: "/#" },
                 { subMenuText: "Bridge BTC/wBTC", path: "/#" },
                 { subMenuText: "Run a node", path: "/#" },
                 { subMenuText: "DAO Model", path: "/#" },

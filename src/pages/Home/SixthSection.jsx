@@ -15,9 +15,9 @@ export default function SixthSection() {
               TECHNOLOGY
             </h1>
             <p className=" text-[#333333] text-right text-sm sm:text-md">
-              Gelios' mission is to form a multi-application ecosystem across
+              Bitcoinnano' mission is to form a multi-application ecosystem across
               Bitcoin and EVM networks, guided by a community-centric approach.
-              Striving for optimal efficiency and cost-effectiveness, Gelios
+              Striving for optimal efficiency and cost-effectiveness, Bitcoinnano
               leads the way in integrating cutting-edge technological
               innovations, including but not limited to Runes protocol, Polygon
               CDK, and Celestia DA.

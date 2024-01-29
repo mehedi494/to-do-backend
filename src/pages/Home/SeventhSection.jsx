@@ -35,7 +35,7 @@ export default function SeventhSection() {
             Explore Bitcoinnano Ecosystem
           </h1>
           <p className="text-sm sm:text-md text-[#333333]">
-            Gelios is leading the charge in constructing a versatile gaming
+            Bitcoinnano is leading the charge in constructing a versatile gaming
             ecosystem for the Bitcoin Blockchain, catering to each individual's
             unique preferences.
           </p>

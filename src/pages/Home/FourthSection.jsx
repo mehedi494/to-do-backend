@@ -17,7 +17,7 @@ export default function FourthSection() {
             </button>
           </div>
           <div className="w-full mx-auto sm:w-[35%]  ">
-            <p className="text-[#333333]">No VC, no pre-sale – just YOU. gOS token is the governance token for Gelios blockchain, functioning within a DAO framework. Holders of the $gOS token exercise collective decision-making authority over all modifications and enhancements to the Gelios blockchain.</p>
+            <p className="text-[#333333]">No VC, no pre-sale – just YOU. gOS token is the governance token for Bitcoinnano blockchain, functioning within a DAO framework. Holders of the $gOS token exercise collective decision-making authority over all modifications and enhancements to the Bitcoinnano blockchain.</p>
           </div>
         </div>
       </div>
