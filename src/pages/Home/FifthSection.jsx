@@ -15,7 +15,7 @@ export default function FifthSection() {
         />
       </div>
       <div
-        className="flex  sm:relative bg-cover bg-center bg-no-repeat   pt-16 rounded-2xl w-full sm:max-w-[70%] sm:mx-auto"
+        className="  sm:relative bg-cover bg-center bg-no-repeat   pt-16 rounded-2xl w-full sm:max-w-[70%] sm:mx-auto"
         style={{ backgroundImage: `url(${bgPattern})` }}
       >
         <img 
@@ -33,7 +33,7 @@ export default function FifthSection() {
             running Gelios’ Observer Nodes, validating contributions and
             unlocking associated rewards.
           </p>
-          <button className="bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80 rounded-lg text-white items-center flex p-4 gap-x-4 transition-transform transform hover:scale-95">
+          <button className="w-60 bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80 rounded-lg text-white items-center flex p-4 gap-x-4 transition-transform transform hover:scale-95">
             Purchase Entry Key <FaArrowRightLong />
           </button>
         </div>
