@@ -1,6 +1,6 @@
 import React from "react";
 import { FaRegCopyright } from "react-icons/fa";
-// import footerLogo from "../../assets/logo.png";
+import footerLogo from "../../assets/logoBitcoinnano.png";
 
 import FooterButton from "./FooterButton.jsx";
 import NewsLetter from "./NewsLetter.jsx";
@@ -20,12 +20,10 @@ export default function Footer() {
             title="footer-logo"
           /> */}
 
-            <h1
-              className="text-white font-bold text-xl  min-w-32 "
-              alt="logo" /* src={img} */
-            >
-              BITCOINNANO{" "}
-            </h1>
+            <img
+              className="text-white font-bold text-xl w-[200px]  min-w-32 "
+              alt="logo"
+              src={footerLogo}></img>
             <p className="flex items-center text-white gap-x-1 font-poppins text-sm ">
               <FaRegCopyright />
               {year} Bitcoinnano. All Rights Reserved
