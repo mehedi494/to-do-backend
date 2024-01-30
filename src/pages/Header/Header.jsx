@@ -59,14 +59,13 @@ export default function Header() {
     },
   ];
   const toggleMenu = () => {
-    console.log("object");
     setIsOpen(!isOpen);
   };
 
   return (
     <div className="bg-[#3e3e3e]  z-20 w-full top-0 right-0  fixed ">
       <header className="  shadow-md font-baiJamjuree">
-        <div className=" max-h-[85px]  flex justify-between   items-center max-w-7xl m-auto p-4">
+        <div className="max-h-[85px]  flex justify-between   items-center max-w-7xl m-auto p-4">
           <Link to="/">
             <div className="w-[200px]  ">
               <img className=" " alt="logo" src={logo} />
@@ -83,7 +82,7 @@ export default function Header() {
               <CiSearch />
             </form>
           </div>
-          <ul className="flex text-xl text-white font-notoSansKr   gap-6 items-center">
+          <ul className="flex text-xl text-white    gap-6 items-center">
             <Link to="/">
               <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
                 Home
