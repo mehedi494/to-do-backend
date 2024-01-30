@@ -1,10 +1,12 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import threDot from "../../assets/3dot.gif";
-import introSVG from "../../assets/bitcoin-net.png";
+import introCicle_1 from "../../assets/bitcoint-net.svg";
+import introCicle_2 from "../../assets/bitcoint-net-middle.svg";
+import shape from  "../../assets/btc_bridge_rotate_shape .svg";
 import introBg from "../../assets/intro_bg.png";
 import intro_pattern from "../../assets/intro_pattern.png";
-
+import "./FirstSection.css"
 export default function FirstIntroSection() {
   return (
     <div
@@ -33,10 +35,22 @@ export default function FirstIntroSection() {
         </div>
         {/* Second sectin */}
         <div className="w-full  sm:w-1/2">
-          <div className="-t-10">
+          <div className="mt-12 relative flex items-center justify-center overflow-hidden">
             <img
-              className="w-full"
-              src={introSVG}
+              className=" relative w-full h-full text-blue-500 animate-spin-right"
+              src={introCicle_2}
+              alt="into-img"
+              title="bitcoin-lifecyle"
+            />
+            <img
+              className="absolute top-0 right-0 w-full h-full text-blue-500 animate-spin-slow"
+              src={introCicle_1}
+              alt="into-img"
+              title="bitcoin-lifecyle"
+            />
+            <img
+              className="-z-10 w-64 absolute    h-full text-blue-500 animate-moveUp"
+              src={shape}
               alt="into-img"
               title="bitcoin-lifecyle"
             />
