@@ -8,9 +8,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 import { Link } from "react-router-dom";
 import logo from "../../assets/logoBitcoinnano.png";
-import NestedMenu from "./NestedMenu";
 import HamBurger from "./HamBurgerMenu";
-
+import NestedMenu from "./NestedMenu";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,10 +35,14 @@ export default function Header() {
       isAccordion: true,
       subMenu: [
         { subMenuText: "Discord", path: "/#", preIcon: <FaDiscord /> },
-        { subMenuText: "Twitter", path: "/#", preIcon: <BsTwitterX /> },
+        {
+          subMenuText: "Twitter",
+          path: "https://twitter.com/Smallbitcoin",
+          preIcon: <BsTwitterX />,
+        },
         {
           subMenuText: "Telegram",
-          link: "/#",
+          link: "https://t.me/bitcoinnanoworld",
           preIcon: <FaTelegramPlane />,
         },
         { subMenuText: "Youtube", path: "/#", preIcon: <FaYoutube /> },
@@ -66,8 +69,7 @@ export default function Header() {
         <div className=" max-h-[85px]  flex justify-between   items-center max-w-7xl m-auto p-4">
           <Link to="/">
             <div className="w-[200px]  ">
-              
-                <img  className=" " alt="logo" src={logo}/>
+              <img className=" " alt="logo" src={logo} />
             </div>
           </Link>
 
@@ -103,10 +105,14 @@ export default function Header() {
               menuText="Community"
               subMenu={[
                 { subMenuText: "Discord", path: "/#", preIcon: <FaDiscord /> },
-                { subMenuText: "Twitter", path: "/#", preIcon: <BsTwitterX /> },
+                {
+                  subMenuText: "Twitter",
+                  path: "https://twitter.com/Smallbitcoin",
+                  preIcon: <BsTwitterX />,
+                },
                 {
                   subMenuText: "Telegram",
-                  link: "/#",
+                  path: "https://t.me/bitcoinnanoworld",
                   preIcon: <FaTelegramPlane />,
                 },
                 { subMenuText: "Youtube", path: "/#", preIcon: <FaYoutube /> },
@@ -124,7 +130,7 @@ export default function Header() {
                 Docs
               </li>
             </Link>
-            <Link to="/sign-in" className="group">
+            <Link to="/#" className="group">
               <button className="hidden sm:hiiden md:inline sm:p-2 p-3 bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl  transition-transform transform group-hover:translate-x-1">
                 Buy Entry Key <FaArrowRightLong className="inline " />
               </button>

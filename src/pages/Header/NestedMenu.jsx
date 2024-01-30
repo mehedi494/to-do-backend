@@ -29,7 +29,7 @@ const NestedMenu = ({ menuText, subMenu, icon }) => {
         <ul className=" absolute flex  mt-2 flex-col gap-3 p-3 transition hover:duration-500  rounded-xl border-gray-400    bg-[#4A4A4A]   border" style={{ width: 'max-content' }}>
           {/* Render your sub-menu options here */}
           {subMenu.map((item, index) => (
-            <Link to={item?.path}>
+            <Link to={item?.path} target="_blank">
               <li 
                 key={index}
                 className="flex items-center hover:text-[#fc690b] transition duration-200 px-3 space-x-2">
