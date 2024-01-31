@@ -47,7 +47,7 @@ export default function EntryMain() {
           <div className="relative w-full  text-4xl font-bold">
             <HeaderEntry></HeaderEntry>
 
-           <div className="mt-10 grid  grid-cols-3 gap-4 ">
+           <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 ">
           <div className="col-span-2"> <FirstContentEntry ></FirstContentEntry></div>
            <div className="grid grid-cols-1 gap-4">
            <SecondContentEntry></SecondContentEntry>

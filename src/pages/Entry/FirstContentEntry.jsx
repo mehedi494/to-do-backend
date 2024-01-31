@@ -2,7 +2,7 @@ import { PiWarningCircleThin } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import bg_sentry from "../../assets/bg-sentry.svg";
 import btc from "../../assets/btc.png";
-import ethereum from "../../assets/ethereum.png";
+// import ethereum from "../../assets/ethereum.png";
 import icon from "../../assets/icon_sentry-key.png";
 import uniSatIcon from "../../assets/button-icon/unisat.svg"
 

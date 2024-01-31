@@ -1,5 +1,5 @@
 import React from "react";
-
+import empty from "../../assets/empty.svg"
 export default function ThirdContentEntry() {
   return (
     <div>
@@ -8,7 +8,7 @@ export default function ThirdContentEntry() {
           <div class="relative ">
             <table class="w-full overflow-hidden rounded-lg bg-gray-100 text-left">
               <thead class="bg-white text-base font-semibold">
-                <tr class="text-gelios">
+                <tr class="text-orange-500">
                   <th scope="col" class="w-1/4 px-6 py-2">
                     Date
                   </th>
@@ -35,7 +35,7 @@ export default function ThirdContentEntry() {
                           height="300"
                           decoding="async"
                           data-nimg="1"
-                          src="/assets/images/default/empty.svg"
+                          src={empty}
                           style={{ color: "transparent" }}
                         />
                       </div>
