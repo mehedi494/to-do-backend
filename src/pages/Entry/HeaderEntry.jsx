@@ -14,8 +14,8 @@ export default function HeaderEntry() {
   };
 
   return (
-    <div className="">
-      <div className="p-1 sm:p-4 top-0 right-0 sticky flex items-center justify-between w-full lg:h-20  rounded-lg bg-[#333333] text-white  border-2">
+    <div className=" z-40 top-2">
+      <div className=" p-1 sm:p-4 top-0 right-0 sticky flex items-center justify-between  w-full lg:h-20  rounded-lg bg-[#333333] text-white  border-2">
         <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row lg:items-center md:justify-between w-full gap-x-8">
           <Link to="/">
             <div className="w-[200px]  ">

@@ -4,8 +4,10 @@ import React from "react";
 import introCicle_2 from "../../assets/bitcoint-net-middle.svg";
 import introCicle_1 from "../../assets/bitcoint-net.svg";
 import shape from "../../assets/btc_bridge_rotate_shape .svg";
-import HeaderEntry from "./HeaderEntry";
 import FirstContentEntry from "./FirstContentEntry";
+import HeaderEntry from "./HeaderEntry";
+import SecondContentEntry from "./SecondContentEntry";
+import ThirdContentEntry from "./ThirdContentEntry";
 
 export default function EntryMain() {
   return (
@@ -42,11 +44,15 @@ export default function EntryMain() {
               />
             </div>
           </div>
-          <div className="relative z-10  text-4xl font-bold">
+          <div className="relative w-full  text-4xl font-bold">
             <HeaderEntry></HeaderEntry>
 
-           <div className="mt-10 grid  grid-cols-2 ">
+           <div className="mt-10 grid  grid-cols-3 gap-4 ">
            <FirstContentEntry className="col-span-2"></FirstContentEntry>
+           <div className="grid grid-cols-1 gap-4">
+           <SecondContentEntry className=""></SecondContentEntry>
+           <ThirdContentEntry className=""></ThirdContentEntry>
+           </div>
            </div>
           </div>
         </div>

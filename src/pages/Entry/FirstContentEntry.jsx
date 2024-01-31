@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import bg_sentry from "../../assets/bg-sentry.svg";
 
-export default function FirstContentEntry() {
+export default function FirstContentEntry({className}) {
   return (
-    <div className="  ">
+    <div className={className}>
       {/* Heading */}
       <div
         className="w-full h-20 flex justify-center items-center bg-cover bg-center bg-no-repeat text-white text-3xl  font-normal rounded-t-3xl"
@@ -44,32 +44,7 @@ export default function FirstContentEntry() {
         </div>
 
         <div className="rounded-bl-3xl rounded-br-3xl bg-gray-100 p-4 text-dark2 md:p-8">
-          <div className="pb-4">
-            <div className="w-full rounded-full bg-gray-200 dark:bg-gray-700">
-              <div className="relative ">
-                <div className=" relative w-full rounded-full  bg-gray-600">
-                  <div className="p-1.5"></div>
-                  <div
-                    className="absolute top-[-200%] z-50 rounded-md bg-gray-300 px-1.5 text-xs text-dark2"
-                    style={{ left: " 1%" }}>
-                    Tier 1
-                  </div>
-                  <div
-                    className="absolute left-0 top-0 z-30 rounded-full bg-[#FD9623] p-1.5 text-center text-xs font-medium leading-none text-dark2"
-                    style={{ width: " 52%" }}></div>
-                  <div className="absolute right-0 top-[-200%] z-50 rounded-md bg-gray-300 px-1.5 text-xs text-dark2">
-                    Tier 2
-                  </div>
-                  <div
-                    className="absolute left-0 top-0 z-20 rounded-full bg-gray-800 p-1.5 text-center text-xs font-medium leading-none text-dark2"
-                    style={{ width: "54%" }}></div>
-                </div>
-              </div>
-            </div>
-            <div className="my-1 text-center text-sm  text-grayThird">
-              617 / 1198 GEK (52%)
-            </div>
-          </div>
+         
           <div className="flex flex-wrap items-center justify-between gap-5">
             <div className="w-2/3">
               <div className="flex items-center gap-2 pb-2">
