@@ -1,10 +1,14 @@
-import React from "react";
+import { PiWarningCircleThin } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import bg_sentry from "../../assets/bg-sentry.svg";
+import btc from "../../assets/btc.png";
+import ethereum from "../../assets/ethereum.png";
+import icon from "../../assets/icon_sentry-key.png";
+import uniSatIcon from "../../assets/button-icon/unisat.svg"
 
-export default function FirstContentEntry({className}) {
+export default function FirstContentEntry() {
   return (
-    <div className={className}>
+    <div>
       {/* Heading */}
       <div
         className="w-full h-20 flex justify-center items-center bg-cover bg-center bg-no-repeat text-white text-3xl  font-normal rounded-t-3xl"
@@ -44,7 +48,6 @@ export default function FirstContentEntry({className}) {
         </div>
 
         <div className="rounded-bl-3xl rounded-br-3xl bg-gray-100 p-4 text-dark2 md:p-8">
-         
           <div className="flex flex-wrap items-center justify-between gap-5">
             <div className="w-2/3">
               <div className="flex items-center gap-2 pb-2">
@@ -56,11 +59,11 @@ export default function FirstContentEntry({className}) {
                     height="24"
                     decoding="async"
                     data-nimg="1"
-                    src="/assets/images/logo/sentry-key.svg"
+                    src={icon}
                     style={{ color: "transparent" }}
                   />
                 </div>
-                <div className="text-xl font-medium">Gelios Entry Key</div>
+                <div className="text-xl font-normal">Gelios Entry Key</div>
                 <div>
                   <div>
                     <span className="group relative">
@@ -70,21 +73,15 @@ export default function FirstContentEntry({className}) {
                           Station.
                         </div>
                       </div>
-                      <img
-                        alt="warn"
-                        loading="lazy"
-                        width="16"
-                        height="16"
-                        decoding="async"
-                        data-nimg="1"
-                        src="/assets/images/icons/warning.svg"
-                        style={{ color: "transparent" }}
+                      <PiWarningCircleThin
+                        className="rotate-180"
+                        style={{ width: "24px", height: "24px" }}
                       />
                     </span>
                   </div>
                 </div>
               </div>
-              <div className="break-words text-base font-normal text-grayThird">
+              <div className="break-words text-base font-normal ">
                 The Key to asserting your eligibility for network challenges and
                 incentives.
               </div>
@@ -102,7 +99,7 @@ export default function FirstContentEntry({className}) {
                         </div>
                         <div className="break-words">
                           2. Buying in bulk may result in acquiring Keys across
-                          various tiers at varying prices.{" "}
+                          various tiers at varying prices.
                         </div>
                         <div className="break-words">
                           3. Transactions using Bitcoin &amp; Ethereum network
@@ -112,19 +109,20 @@ export default function FirstContentEntry({className}) {
                         <div className="break-words">
                           4. If sold-out, unconfirmed transactions will be
                           refunded to the user's purchasing wallet.
-                        </div>{" "}
+                        </div>
                       </div>
                     </div>
-                    <img
+                    {/*  <img
                       alt="warn"
                       loading="lazy"
                       width="16"
                       height="16"
                       decoding="async"
                       data-nimg="1"
-                      src="/assets/images/icons/warning.svg"
+                      src={<PiWarningCircleThin/>}
                       style={{ color: "transparent" }}
-                    />
+                    /> */}
+                    <PiWarningCircleThin className="w-6 h-6" />
                   </span>
                 </div>
               </div>
@@ -133,7 +131,7 @@ export default function FirstContentEntry({className}) {
                   <div className="relative flex max-w-[8rem] items-center">
                     <button
                       type="button"
-                      className="0 h-11  rounded-s-lg bg-primary p-3 text-white  focus:outline-none focus:ring-0 ">
+                      className="0 h-11 bg-orange-500 rounded-s-lg bg-primary p-3 text-white  focus:outline-none focus:ring-0 ">
                       <svg
                         className="h-3 w-3 "
                         aria-hidden="true"
@@ -151,14 +149,13 @@ export default function FirstContentEntry({className}) {
                     <input
                       name="amount"
                       type="number"
-                      min="1"
-                      max="100"
+                     
                       id="amount"
-                      className="block h-11 w-full border-2 border-x-0 border-primary text-center font-semibold text-dark2 hover:outline-none focus:border-primary  focus:outline-none focus:ring-0"
+                      className="number  block h-11 w-full border-2 border-x-0 border-primary text-center text-lg font-semibold text-dark2 hover:outline-none focus:border-primary  focus:outline-none focus:ring-0"
                     />
                     <button
                       type="button"
-                      className="h-11 rounded-r-lg bg-primary p-3 text-white  focus:outline-none focus:ring-0 focus:ring-gray-100">
+                      className="h-11 rounded-r-lg bg-orange-500 p-3 text-white  focus:outline-none focus:ring-0 focus:ring-gray-100">
                       <svg
                         className="h-3 w-3 "
                         aria-hidden="true"
@@ -178,14 +175,14 @@ export default function FirstContentEntry({className}) {
               </div>
             </div>
           </div>
-          <hr className="my-3 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+          <hr className="my-3 h-px border-0  bg-gray-300" />
           <div>
             <div className="pt-1">
               <div>
                 <div className="flex justify-between">
                   <div>
-                    <p className="font-semibold">1 x Gelios Entry Key</p>
-                    <p className="flex items-center gap-1 text-gray80">
+                    <p className="text-xl font-normal">1 x Gelios Entry Key</p>
+                    <p className="flex items-center gap-1 text-base  font-normal  ">
                       <div>0.00551</div>BTC per key
                     </p>
                   </div>
@@ -204,7 +201,7 @@ export default function FirstContentEntry({className}) {
                                 height="20"
                                 decoding="async"
                                 data-nimg="1"
-                                src="/assets/images/tokens/btc.svg"
+                                src={btc}
                                 style={{ color: "transparent" }}
                               />
                             </div>
@@ -229,7 +226,7 @@ export default function FirstContentEntry({className}) {
                   </div>
                 </div>
                 <div>
-                  <div className="flex min-w-[140px] items-center justify-between gap-1">
+                  <div className="flex min-w-[140px] items-center justify-between gap-1 text-base font-normal">
                     <p>Pay:</p>
                     <div className="flex items-center gap-1">
                       <div>
@@ -240,12 +237,12 @@ export default function FirstContentEntry({className}) {
                   </div>
                 </div>
               </div>
-              <hr className="my-3 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+              <hr className="my-3 h-px border-0  bg-gray-300" />
               <div className="my-4">
                 <div className="pb-2">
                   <label
                     for="output"
-                    className="flex items-center gap-1 capitalize">
+                    className="flex items-center gap-1 capitalize font-normal text-xl ">
                     Recipient Address
                     <div>
                       <span className="group relative z-50 ">
@@ -262,15 +259,19 @@ export default function FirstContentEntry({className}) {
                             </div>
                           </div>
                         </div>
-                        <img
+                        {/*  <img
                           alt="warn"
                           loading="lazy"
                           width="16"
                           height="16"
                           decoding="async"
                           data-nimg="1"
-                          src="/assets/images/icons/warning.svg"
+                          src={icon}
                           style={{ color: "transparent" }}
+                        /> */}
+                        <PiWarningCircleThin
+                          className="rotate-180 font-semibold"
+                          style={{ width: "24px", height: "24px" }}
                         />
                       </span>
                     </div>
@@ -281,14 +282,14 @@ export default function FirstContentEntry({className}) {
                     name="output"
                     type="text"
                     id="output"
-                    className="block h-[44px] w-full rounded-xl border-none bg-gray-200   placeholder:text-gray80 focus:border-none focus:outline-none focus:ring-0"
+                    className="px-4 text-sm font-normal block h-[44px] w-full rounded-xl border-none bg-gray-200   placeholder:text-gray=100 focus:border-none focus:outline-none focus:ring-0"
                     placeholder="Gelios Recipient Address"
                   />
                 </div>
               </div>
-              <hr className="my-3 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+              <hr className="my-3 h-px border-0  bg-gray-300" />
               <div className="pb-2">
-                <label for="refCode" className="capitalize">
+                <label for="refCode" className="capitalize font-normal text-xl">
                   Referrer's Code
                 </label>
               </div>
@@ -298,16 +299,16 @@ export default function FirstContentEntry({className}) {
                   placeholder=""
                   type="text"
                   id="refCode"
-                  className="block h-[44px] w-full rounded-xl border-none bg-gray-200   placeholder:text-gray80 focus:border-none focus:outline-none focus:ring-0"
+                  className="px-4 text-sm font-normal block h-[44px] w-full rounded-xl border-none bg-gray-200   placeholder:text-gray80 focus:border-none focus:outline-none focus:ring-0"
                 />
               </div>
-              <hr className="my-3 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+              <hr className="my-3 h-px border-0  bg-gray-300" />
               <div className="my-2 flex items-center">
                 <input
                   id="check_agree"
                   type="checkbox"
                   name="agree"
-                  className="h-4 w-4 rounded border-primary  bg-transparent  text-primary  focus:bg-gelios focus:text-primary  focus:ring-0"
+                  className="h-4 w-4 rounded border-primary  bg-transparent  text-primary bg-amber-500 focus:bg-amber-500 focus:text-amber-500  focus:ring-0"
                 />
                 <label
                   for="check_agree"
@@ -317,8 +318,11 @@ export default function FirstContentEntry({className}) {
                     <Link
                       target="_blank"
                       to="https://docs.gelios.io/gelios-keys-and-nodes/node-station/entry-node-agreement">
-                      <span className="text-primary"> Entry Key Agreement</span>
-                    </Link>{" "}
+                      <span className="text-blue-500">
+                        {" "}
+                        Entry Key Agreement
+                      </span>
+                    </Link>
                   </div>
                 </label>
               </div>
@@ -334,18 +338,12 @@ export default function FirstContentEntry({className}) {
                   to="https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo">
                   <div className="flex items-center justify-center gap-2">
                     <div className="flex items-center justify-center gap-2">
-                      <img
-                        alt="token"
-                        loading="lazy"
-                        width="20"
-                        height="20"
-                        decoding="async"
-                        data-nimg="1"
-                        src="/assets/images/icons/unisat.svg"
-                        style={{ color: "transparent" }}
-                      />
+                      
+                      <></>
                     </div>
-                    <p className="text-lg font-bold"> Install UniSat</p>
+                    <button className="bg-gradient-to-r font-normal text-lg from-[#fc690b] to-[#feab2d] hover:opacity-80  rounded-lg text-white  items-center flex p-2 px-4 gap-x-4 transition-transform transform hover:scale-95">
+                     <img className="w-6" src={uniSatIcon } alt=""/> Install Unisat
+                    </button>
                   </div>
                 </Link>
               </button>

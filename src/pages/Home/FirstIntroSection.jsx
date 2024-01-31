@@ -2,10 +2,10 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import threDot from "../../assets/3dot.gif";
 import introCicle_1 from "../../assets/bitcoint-net.svg";
-import introCicle_2 from "../../assets/bitcoint-net-middle.svg";
+import introCicle_2 from "../../assets/bitcoint-net.svg";
 import shape from "../../assets/btc_bridge_rotate_shape .svg";
 import introBg from "../../assets/intro_bg.png";
-import intro_pattern from "../../assets/intro_pattern.png";
+import intro_pattern from '../../assets/intro_pattern.png'
 
 export default function FirstIntroSection() {
   return (

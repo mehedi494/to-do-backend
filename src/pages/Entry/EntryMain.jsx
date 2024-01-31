@@ -1,13 +1,13 @@
 import React from "react";
-// import bg_circle_1 from "../../assets/bitcoint-net.svg"
 
-import introCicle_2 from "../../assets/bitcoint-net-middle.svg";
+
+import introCicle_2 from "../../bitcoint-net-middle.svg";
 import introCicle_1 from "../../assets/bitcoint-net.svg";
 import shape from "../../assets/btc_bridge_rotate_shape .svg";
-import FirstContentEntry from "./FirstContentEntry";
-import HeaderEntry from "./HeaderEntry";
-import SecondContentEntry from "./SecondContentEntry";
-import ThirdContentEntry from "./ThirdContentEntry";
+import FirstContentEntry from "./FirstContentEntry.jsx";
+import SecondContentEntry from "./SecondContentEntry.jsx"
+import ThirdContentEntry from  "./ThirdContentEntry.jsx"
+import HeaderEntry from "./HeaderEntry.jsx"
 
 export default function EntryMain() {
   return (
@@ -48,10 +48,10 @@ export default function EntryMain() {
             <HeaderEntry></HeaderEntry>
 
            <div className="mt-10 grid  grid-cols-3 gap-4 ">
-           <FirstContentEntry className="col-span-2"></FirstContentEntry>
+          <div className="col-span-2"> <FirstContentEntry ></FirstContentEntry></div>
            <div className="grid grid-cols-1 gap-4">
-           <SecondContentEntry className=""></SecondContentEntry>
-           <ThirdContentEntry className=""></ThirdContentEntry>
+           <SecondContentEntry></SecondContentEntry>
+           <ThirdContentEntry ></ThirdContentEntry>
            </div>
            </div>
           </div>

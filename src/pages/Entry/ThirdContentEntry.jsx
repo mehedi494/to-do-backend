@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function ThirdContentEntry({ className }) {
+export default function ThirdContentEntry() {
   return (
-    <div className={className}>
+    <div>
       <div class="h-full overflow-x-auto rounded-3xl bg-gray-100  text-dark2 shadow-md">
         <div class="relative">
           <div class="relative ">

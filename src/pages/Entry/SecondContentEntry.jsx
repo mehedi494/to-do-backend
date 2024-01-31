@@ -1,8 +1,8 @@
-import React from "react";
 
-export default function SecondContentEntry({className}) {
+import { PiWarningCircleThin } from "react-icons/pi";
+export default function SecondContentEntry() {
   return (
-    <div className={className}>
+    <div >
       <div className="h-full   rounded-3xl bg-gray-100 p-4 text-dark2 shadow-md md:p-8">
         <div>
           <div className="flex justify-between">
@@ -30,16 +30,21 @@ export default function SecondContentEntry({className}) {
                           </div>
                         </div>
                       </div>
-                      <img
+                     {/*  <img
                         alt="warn"
                         loading="lazy"
                         width="16"
                         height="16"
                         decoding="async"
                         data-nimg="1"
-                        src="/assets/images/icons/warning.svg"
+                        src={ }
                         style={{ color: "transparent" }}
-                      />
+                      /> */}
+                      <PiWarningCircleThin
+                          className="rotate-180 font-semibold"
+                          style={{ width: "24px", height: "24px" }}
+                          
+                        />
                     </span>
                   </div>
                 </div>
