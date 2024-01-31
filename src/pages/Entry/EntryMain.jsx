@@ -5,10 +5,11 @@ import introCicle_2 from "../../assets/bitcoint-net-middle.svg";
 import introCicle_1 from "../../assets/bitcoint-net.svg";
 import shape from "../../assets/btc_bridge_rotate_shape .svg";
 import HeaderEntry from "./HeaderEntry";
+import FirstContentEntry from "./FirstContentEntry";
 
 export default function EntryMain() {
   return (
-    <div className="max-w-7xl mx-auto font-baiJamjuree overflow-hidden  ">
+    <div className="max-w-7xl mx-auto font-baiJamjuree overflow-hidden p-4  ">
       <div className="min-h-screen ">
         <div className="relative w-full h-full">
           <div
@@ -44,7 +45,9 @@ export default function EntryMain() {
           <div className="relative z-10  text-4xl font-bold">
             <HeaderEntry></HeaderEntry>
 
-            <div>content here</div>
+           <div className="mt-10 grid  grid-cols-2 ">
+           <FirstContentEntry className="col-span-2"></FirstContentEntry>
+           </div>
           </div>
         </div>
       </div>
