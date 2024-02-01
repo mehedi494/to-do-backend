@@ -24,8 +24,8 @@ export default function FifthSection() {
           src={keyImg}
           alt="key"
         />
-        <div className="w-2/3 p-8   flex flex-col justify-center gap-y-4">
-          <h1 className="text-5xl font-semibold text-white">Entry Key Mint</h1>
+        <div className="sm:w-2/3 p-8   flex flex-col justify-center gap-y-4">
+          <h1 className="text-3xl sm:text-5xl font-semibold text-white">Entry Key Mint</h1>
           <p className="">
             The Entry Key is an exclusive passport, offering early developers
             privileged access to innovative features and inherent benefits of

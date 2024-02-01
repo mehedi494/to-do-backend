@@ -16,11 +16,11 @@ export default function FirstIntroSection() {
       {/* className="flex flex-wrap flex-col-reverse md:flex-row lg:flex-row justify-center items-center p-4 max-w-7xl  font-baiJamjuree */}
       <div className="flex flex-wrap flex-col-reverse md:flex-row lg:flex-row min-h-[450px] items-center mx-auto  max-w-7xl  font-baiJamjuree relative   ">
         <div className="w-full  md:w-1/2 lg:w-1/2  flex flex-col-reverse gap-y-6 my-4  ">
-          <div className="flex  gap-x-4 h-12 sm:h-auto px-4 ">
-            <button className="group  bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:translate-x-1  rounded-lg text-white p-4  sm:px-4 gap-x-16 transition-transform transform ">
-              Run a Node <FaArrowRightLong className="inline group-hover:translate-x-1 group-hover:transition-transform transform" />
+          <div className="flex w-auto  gap-x-4  sm:h-auto  ">
+            <button className="group   bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:translate-x-1  rounded-lg text-white  sm:px-4  transition-transform transform py-4 px-8 ">
+              Run a Node <FaArrowRightLong className="inline"/>
             </button>
-            <button className="border-1 bg-cyan-200 px-4  rounded-lg text-white border-gray-600 border ">
+            <button className="border-1 px-4 bg-cyan-200   rounded-lg text-white border-gray-600 border ">
               Bridge to Bitcoinnano
             </button>
           </div>
@@ -34,7 +34,6 @@ export default function FirstIntroSection() {
               gateway to a seamlessly connected, decentralized tomorrow. The
               future of innovation starts here!
             </p>
-           
           </div>
           <div
             className="h-[50px] sm:hidden  bg-center"
@@ -103,7 +102,9 @@ export default function FirstIntroSection() {
           <div className="flex gap-x-4">
             <div className="flex flex-col items-center justify-center  border-r mt-3 mb-3 pr-3  border-black">
               <h1 className="text-lg sm:text-5xl text-[#3f3f3f]">40.3K</h1>
-              <p className="text-sm sm:text-lg font-medium text-[#3f3f3f]">Total Users</p>
+              <p className="text-sm sm:text-lg font-medium text-[#3f3f3f]">
+                Total Users
+              </p>
             </div>
             <div className=" flex flex-col justify-center items-center  border-r mt-3 mb-3 pr-3  border-black">
               <img className="w-20 " src={threDot} alt="" />

@@ -50,7 +50,7 @@ export default function SeventhSection() {
               </h1>
               <img src={card?.img} alt="rpgs" />
               <p>{card?.description}</p>
-              <button className="flex justify-between  my-2 bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80 rounded-lg text-white items-center  p-2 gap-x-4 transition-transform transform hover:scale-95">
+              <button className="flex justify-between  my-2 bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80 rounded-lg text-white items-center  p-4 gap-x-4 transition-transform transform hover:scale-95">
                 Learn more
               </button>
             </div>
