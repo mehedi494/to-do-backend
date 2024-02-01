@@ -3,7 +3,7 @@ const SecondSection = () => {
   return (
     <div>
       {/* container  */}
-      <div className="flex flex-wrap items-center justify-center  mx-auto max-w-7xl ">
+      <div className="flex  flex-col-reverse sm:flex-row items-center justify-center  mx-auto max-w-7xl ">
         {/* left side */}
         <div className="w-full sm:w-1/2 md:w-1/2  p-8 font-baiJamjuree">
         <div className=" flex flex-col gap-y-8">

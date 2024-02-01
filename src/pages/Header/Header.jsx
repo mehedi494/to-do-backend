@@ -80,7 +80,7 @@ export default function Header() {
   return (
     <div className="bg-[#3e3e3e]  z-20 w-full top-0 right-0  fixed ">
       <header className="  shadow-md font-baiJamjuree">
-        <div className="h-[100px]  flex justify-between   items-center max-w-7xl m-auto ">
+        <div className="h-[100px]  flex justify-between   items-center max-w-7xl mx-auto px-2">
           <Link to="/">
             <div className="w-[200px]  ">
               <img className=" " alt="logo" src={logo} />
@@ -97,7 +97,7 @@ export default function Header() {
               <CiSearch />
             </form>
           </div>
-          <ul className="flex  text-xl text-white    gap-6 items-center">
+          <ul className="flex  text-xl text-white    gap-x-4 items-center">
             <Link to="/">
               <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
                 Home
@@ -145,7 +145,7 @@ export default function Header() {
               </li>
             </Link>
             <Link to="/#" className="">
-              <button className="group hidden sm:hiiden md:inline sm:p-2 p-5 bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl  transition-transform transform border border-[#3e3e3e]  hover:border hover:border-white group-hover:transition-transform ">
+              <button className="group hidden sm:hiiden md:inline sm:p-2 p-2 bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl  transition-transform transform border border-[#3e3e3e]  hover:border hover:border-white group-hover:transition-transform ">
                 Buy Entry Key{" "}
                 <FaArrowRightLong className="inline group-hover:translate-x-1 group-hover:transition-transform transform " />
               </button>

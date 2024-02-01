@@ -11,7 +11,7 @@ export default function NewsLetter() {
     <form  className='relative sm:max-w-lg w-10/12 p-2 sm:p-4 rounded-full  bg-white ' >
      
       <input className='rounded-full focus:outline-none font-poppins p-3' type="text"/>
-      <button className='p-2  absolute right-2  text-right font-poppins  bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80 text-white rounded-3xl' type="text">subscribe</button>
+      <button className='p-2 sm:p-4 sm:px-16  absolute right-2  text-right font-poppins  bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80 text-white rounded-3xl' type="text">subscribe</button>
     </form>
    </div>
   </div>

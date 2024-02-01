@@ -11,7 +11,7 @@ export default function ThirdSection() {
             <img src={btcBridge} alt="" />
           </div>
           <div className="w-[80%] mx-auto">
-            <h1 className="text-[#fd9623] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-center font-semibold text-[#fd9623] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
               BRIDGING BTC/ WBTC <span className="text-[#333333]">BETWEEN</span>{" "}
               BITCOINNANO, BITCOIN <span className="text-[#333333]"> AND</span>{" "}
               EVMS
@@ -26,9 +26,9 @@ export default function ThirdSection() {
               versa, unlocking vast DeFi opportunities.{" "}
             </p>
           </div>
-          <div className="flex justify-center">
-            <button className="bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80  rounded-lg text-white  items-center flex p-2 gap-x-4 transition-transform transform hover:scale-95">
-              Bridge <FaArrowRightLong />
+          <div className="flex justify-center ">
+            <button className="group bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80  text-2xl rounded-lg text-white  items-center flex px-16 p-4 gap-x-4 transition-transform transform hover:scale-95 ">
+              Bridge <FaArrowRightLong className="inline group-hover:translate-x-1 group-hover:transition-transform transform" />
             </button>
           </div>
         </div>
