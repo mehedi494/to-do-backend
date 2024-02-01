@@ -16,7 +16,7 @@ export default function FirstIntroSection() {
       {/* className="flex flex-wrap flex-col-reverse md:flex-row lg:flex-row justify-center items-center p-4 max-w-7xl  font-baiJamjuree */}
       <div className="flex flex-wrap flex-col-reverse md:flex-row lg:flex-row min-h-[450px] items-center mx-auto  max-w-7xl  font-baiJamjuree relative   ">
         <div className="w-full  md:w-1/2 lg:w-1/2  flex flex-col-reverse gap-y-6 my-4  ">
-          <div className="flex w-auto  gap-x-4  sm:h-auto  ">
+          <div className="flex w-auto  gap-x-4  sm:h-auto px-4 ">
             <button className="group   bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:translate-x-1  rounded-lg text-white  sm:px-4  transition-transform transform py-4 px-8 ">
               Run a Node <FaArrowRightLong className="inline"/>
             </button>
