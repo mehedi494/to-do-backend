@@ -1,24 +1,25 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import threDot from "../../assets/3dot.gif";
-import introCicle_1 from "../../assets/bitcoint-net.svg";
+import introCicle_1 from "../../assets/bitcoint-net-2.svg";
 import introCicle_2 from "../../assets/bitcoint-net.svg";
-import shape from "../../assets/btc_bridge_rotate_shape .svg";
+import boxImg from "../../assets/btc_bridge_rotate_shape .svg";
 import introBg from "../../assets/intro_bg.png";
-import intro_pattern from '../../assets/intro_pattern.png'
+import intro_pattern from "../../assets/intro_pattern.png";
 
 export default function FirstIntroSection() {
   return (
     <div
-      className="bg-cover bg-center bg-no-repeat"
+      className="bg-cover bg-center bg-no-repeat mt-16"
       style={{ backgroundImage: `url(${introBg})` }}>
-      {/* first section */}
-      <div className="flex flex-wrap flex-col-reverse md:flex-row lg:flex-row justify-center items-center p-4 max-w-7xl mx-auto font-baiJamjuree ">
-        <div className="w-full  md:w-1/2 lg:w-1/2  flex flex-col gap-y-5 my-4">
-          <h1 className="text-[#fd9623] text-2xl sm:text-3xl lg:text-4xl font-semibold">
+      {/* first  */}
+      {/* className="flex flex-wrap flex-col-reverse md:flex-row lg:flex-row justify-center items-center p-4 max-w-7xl  font-baiJamjuree */}
+      <div className="flex flex-wrap flex-col-reverse md:flex-row lg:flex-row min-h-[450px] items-center mx-auto 4 max-w-7xl  font-baiJamjuree relative  ">
+        <div className="w-full  md:w-1/2 lg:w-1/2  flex flex-col gap-y-6 my-4 ">
+          <h1 className="text-[#fd9623] text-2xl sm:text-3xl lg:text-6xl  font-medium w-full leading-3">
             THE DAPP LAYER FOR BITCOIN ECOSYSTEM
           </h1>
-          <p className="text-[#333333] text-sm sm:text-md lg:text-lg  font-semibold ">
+          <p className="text-[#333333] text-sm sm:text-md lg:text-lg  font-medium ">
             Designed to enhance Bitcoin capabilities, BITCOINNANO is your
             gateway to a seamlessly connected, decentralized tomorrow. The
             future of innovation starts here!
@@ -31,30 +32,58 @@ export default function FirstIntroSection() {
               Bridge to Bitcoinnano
             </button>
           </div>
+
+          {/* Second part */}
+          <div className="w-full  sm:w-1/2 absolute top-0 right-0">
+            <div className="  relative flex items-center justify-center overflow-hidden">
+              <img
+                className="absolute top-0 right-0 w-full h-full text-blue-500 
+              animate-spin-right"
+                src={introCicle_2}
+                alt="into-img"
+                title="bitcoin-lifecyle"
+              />
+              <img
+                className=" relative w-full h-full text-blue-500 animate-spin-slow"
+                src={introCicle_1}
+                alt="into-img"
+                title="bitcoin-lifecyle"
+              />
+              <img
+                className="-z-10 w-64 absolute    h-full text-blue-500 animate-moveUp"
+                src={boxImg}
+                alt="into-img"
+                title="bitcoin-lifecyle"
+              />
+            </div>
+          </div>
         </div>
-        {/* Second sectin */}
-        <div className="w-full  sm:w-1/2">
-          <div className="mt-12 relative flex items-center justify-center overflow-hidden">
+
+        {/* <div className="w-full  sm:w-1/2 absolute top-0 right-0">
+          <div className="mt-12  relative flex items-center justify-center overflow-hidden">
+           
+
             <img
-              className=" relative w-full h-full text-blue-500 animate-spin-right"
+              className="absolute top-0 right-0 w-full h-full text-blue-500 
+              animate-spin-right"
               src={introCicle_2}
               alt="into-img"
               title="bitcoin-lifecyle"
             />
-            <img
-              className="absolute top-0 right-0 w-full h-full text-blue-500 animate-spin-slow"
+             <img
+              className=" relative w-full h-full text-blue-500 animate-spin-slow"
               src={introCicle_1}
               alt="into-img"
               title="bitcoin-lifecyle"
             />
             <img
               className="-z-10 w-64 absolute    h-full text-blue-500 animate-moveUp"
-              src={shape}
+              src={boxImg}
               alt="into-img"
               title="bitcoin-lifecyle"
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* third section  */}

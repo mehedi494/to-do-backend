@@ -170,7 +170,7 @@
     <path fill="none"
       d="M886 443c0 244.66-198.34 443-443 443S0 687.66 0 443 198.34 0 443 0s443 198.34 443 443z"
       style="display:block" />
-    <g clip-path="url(#b)" style="display:block" transform="rotate(145.408 385.086 409.028)">
+    <!-- <g clip-path="url(#b)" style="display:block" transform="rotate(145.408 385.086 409.028)">
       <g clip-path="url(#c)" style="display:block" transform="translate(-25.34 -59.31)">
         <g clip-path="url(#d)" style="display:block" transform="rotate(60 227.287 393.683)">
           <g clip-path="url(#e)" style="display:block">
@@ -206,8 +206,8 @@
           d="M13.81 27.62c7.63 0 13.81-6.18 13.81-13.81C27.62 6.18 21.44 0 13.81 0 6.18 0 0 6.18 0 13.81c0 7.63 6.18 13.81 13.81 13.81z"
           style="display:block" transform="rotate(60 -144.266 512.534)" />
       </g>
-    </g>
-   <!--  <g clip-path="url(#m)" style="display:block" transform="rotate(-145.408 443 443)">
+    </g> -->
+    <g clip-path="url(#m)" style="display:block" transform="rotate(-145.408 443 443)">
       <g clip-path="url(#n)" style="display:block" transform="translate(44 26)">
         <g clip-path="url(#o)" style="display:block" transform="translate(38.63 23.71)">
           <g clip-path="url(#p)" style="display:block" transform="translate(0 158.97)">
@@ -268,6 +268,6 @@
           </g>
         </g>
       </g>
-    </g> -->
+    </g>
   </g>
 </svg>

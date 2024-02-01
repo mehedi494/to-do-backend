@@ -10,17 +10,27 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logoBitcoinnano.png";
 import HamBurger from "./HamBurgerMenu";
 import NestedMenu from "./NestedMenu";
+import SearchSmallDevice from "./SearchSmallDevice";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isInputOpen, setInputOpen] = useState(false);
+  
+
+  const toggleSearch = () => {
+     // console.log("sdfjlk");
+    setInputOpen(!isInputOpen);
+  };
+  // console.log(isInputOpen);
+
   const smallDeviceMenu = [
     {
       menuText: "Home",
-      path: "/",
+      path: "/#",
     },
     {
       menuText: "Explore",
-      path: "/",
+      path: "/#",
       isAccordion: true,
       subMenu: [
         { subMenuText: "Bitcoinnano Explorer", path: "/#" },
@@ -28,6 +38,10 @@ export default function Header() {
         { subMenuText: "Run a node", path: "/#" },
         { subMenuText: "DAO Model", path: "/#" },
       ],
+    },
+    {
+      menuText: "Docs",
+      path: "/#",
     },
     {
       menuText: "Community",
@@ -61,11 +75,12 @@ export default function Header() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+ 
 
   return (
     <div className="bg-[#3e3e3e]  z-20 w-full top-0 right-0  fixed ">
       <header className="  shadow-md font-baiJamjuree">
-        <div className="max-h-[85px]  flex justify-between   items-center max-w-7xl m-auto p-4">
+        <div className="h-[100px]  flex justify-between   items-center max-w-7xl m-auto ">
           <Link to="/">
             <div className="w-[200px]  ">
               <img className=" " alt="logo" src={logo} />
@@ -82,7 +97,7 @@ export default function Header() {
               <CiSearch />
             </form>
           </div>
-          <ul className="flex text-xl text-white    gap-6 items-center">
+          <ul className="flex  text-xl text-white    gap-6 items-center">
             <Link to="/">
               <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
                 Home
@@ -119,33 +134,41 @@ export default function Header() {
               ]}
               icon={<FaAngleDown className="inline" />}
               link="/"></NestedMenu>
-            <Link to="/sign-in">
+            <Link to="/#">
               <li className="hidden md:hidden lg:hidden xl:inline  sm:hidden hover:text-[#fc690b] transition duration-200">
                 Ecosystem
               </li>
             </Link>
-            <Link to="/sign-in">
-              <li className="hidden md:hidden sm:hidden hover:underline">
+            <Link to="/#">
+              <li className="hidden md:hidden lg:hidden xl:inline  sm:hidden hover:text-[#fc690b] transition duration-200">
                 Docs
               </li>
             </Link>
-            <Link to="/#" className="group">
-              <button className="hidden sm:hiiden md:inline sm:p-2 p-3 bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl  transition-transform transform group-hover:translate-x-1">
-                Buy Entry Key <FaArrowRightLong className="inline " />
+            <Link to="/#" className="">
+              <button className="group hidden sm:hiiden md:inline sm:p-2 p-5 bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl  transition-transform transform border border-[#3e3e3e]  hover:border hover:border-white group-hover:transition-transform ">
+                Buy Entry Key{" "}
+                <FaArrowRightLong className="inline group-hover:translate-x-1 group-hover:transition-transform transform " />
               </button>
             </Link>
-            <button className="text-[#feab2d] sm:inline md:hidden lg:hidden xl:hidden inline">
+
+            {/* ********** */}
+            
+            <button onClick={toggleSearch} className="text-[#feab2d] sm:inline md:hidden lg:hidden xl:hidden inline">
               <CiSearch />
             </button>
+            {/* ******** */}
             <button
               onClick={toggleMenu}
-              className="text-[#feab2d] sm:inline md:inline lg:inline xl:hidden  ">
+              className="text-[#feab2d]  sm:inline md:inline lg:inline xl:hidden  ">
               {!isOpen ? <RxHamburgerMenu /> : <IoMdClose />}
             </button>
           </ul>
         </div>
         <HamBurger isOpen={isOpen} menus={smallDeviceMenu}></HamBurger>
       </header>
+      {isInputOpen&&
+        <SearchSmallDevice isInputOpen={isInputOpen} setInputOpen={setInputOpen}></SearchSmallDevice>
+      }
     </div>
   );
 }
