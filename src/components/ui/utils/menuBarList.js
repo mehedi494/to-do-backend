@@ -2,7 +2,7 @@ export const menus = [
   { title: "Welcome!", path: "/docs", icon: "👐" },
   {
     title: "Foundation",
-    path: "/",
+    path: "/docs/foundation",
     icon: "🍒",
     accordian: [
       {

@@ -10,11 +10,10 @@ export default function DocumentsLayout({ children }) {
       <div className="flex">
         <DocsSideBar></DocsSideBar>
 
-        <div className="w-full p-4">
-        <Outlet>
-          {children}F
-        </Outlet>
+        <div className="w-full  bg-white font-poppins">
+          <Outlet>{children}</Outlet>
         </div>
+        <div className="bg-white  h-screen w-80"></div>
       </div>
     </div>
   );

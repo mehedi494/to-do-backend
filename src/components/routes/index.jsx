@@ -4,6 +4,7 @@ import EntryMain from "../../pages/Entry/EntryMain";
 import HomeMain from "../../pages/Home/HomeMain";
 import DocumentsLayout from "../layout/DocumentsLayout";
 import Main from "../layout/main";
+import Foundation from "../../pages/Documents/Foundation";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/docs",
         element: <Welcome></Welcome>,
+      },
+      {
+        path: "/docs/foundation",
+        element: <Foundation></Foundation>,
       },
     ],
   },

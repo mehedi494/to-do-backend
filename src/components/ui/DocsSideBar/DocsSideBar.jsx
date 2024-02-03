@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Accordion from "../Accordion";
-import { menus } from "../utils/mebuBarList";
+import { menus } from "../utils/menuBarList";
 
 export default function DocsSideBar({ children }) {
   const menuItem = menus;
