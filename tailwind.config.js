@@ -1,28 +1,8 @@
-const { fontFamily } = require("tailwindcss/defaultTheme")
+const { fontFamily } = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        notoSansKr: ["Noto Sans KR", "sans-serif"],
-        baiJamjuree: ["Bai Jamjuree", "sans-serif"],
-      },
-      keyframes: {
-        ,
-          
-          /* "50%": {
-            transform: "translateY(10%)",
-          }, */
-        },
-      },
-      animation: {
-        
-      
-      },
-    },
-  },
+
   theme: {
     container: {
       center: true,
@@ -74,6 +54,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        baiJamjuree: ["Bai Jamjuree", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
@@ -84,7 +66,6 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
