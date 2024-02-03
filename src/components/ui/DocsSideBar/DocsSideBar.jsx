@@ -1,37 +1,40 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Accordion from "../Accordion";
 import { menus } from "../utils/mebuBarList";
 
 export default function DocsSideBar({ children }) {
   const menuItem = menus;
-  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
-      <div className="bg-gray-800 h-screen w-64 text-white p-4">
+      <div className="bg-white  h-screen w-80 overflow-y-scroll pt-4 pl-6 pr-4 font-poppins text-[#8a8b8f] text-sm">
         {/* Sidebar content goes here */}
         <ul>
           {menuItem.map((item, index) => {
             return item.path ? (
               item.title && item.path && !item.accordian ? (
+                /* Single menu without accordion */
                 <Link to={item?.path}>
-                  <li key={index}>{item.title}</li>
+                  <div className="flex items-center w-full  hover:bg-gray-200  p-1 rounded mb-2 gap-x-4 ">
+                    <span className="text-lg">{item.icon}</span>
+                    <li className="" key={index}>
+                      {item.title}
+                    </li>
+                  </div>
                 </Link>
-              ) : 
-                
-               
-                 
-                      <Accordion
-                      key={index}
-                      // title={accitem.title}
-                      contents={item}
-                      isOpen={isOpen}></Accordion>
-                 
-                 
-             
-             
+              ) : (
+                <Accordion
+                  key={index}
+                  // title={accitem.title}
+                  contents={item}></Accordion>
+              )
             ) : (
-              item.sectionTitle && <li key={index}>{item.sectionTitle}</li>
+              /* Section title here only */
+              item.sectionTitle && (
+                <li key={index} className="font-semibold mt-4 mb-2">
+                  {item.sectionTitle}
+                </li>
+              )
             );
           })}
         </ul>

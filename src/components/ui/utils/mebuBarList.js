@@ -1,17 +1,18 @@
-export const  menus = [
-  { title: "Welcome!", path: "/docs", icon: "" },
+export const menus = [
+  { title: "Welcome!", path: "/docs", icon: "👐" },
   {
     title: "Foundation",
     path: "/",
+    icon: "🍒",
     accordian: [
       {
         title: "Current Challange",
-        icon: "",
+        icon: "‼️",
         path: "",
       },
       {
         title: "Whats problem does Bitcoinnano solve?",
-        icon: "",
+        icon: "🔩",
         path: "Whats-problem-does-Bitcoinnano-solve",
       },
     ],
@@ -19,25 +20,26 @@ export const  menus = [
   {
     title: "Bitcoinnano Blockchain",
     path: "/",
+    icon: "🎮",
     accordian: [
       {
         title: "First Runes-based blockchain",
-        icon: "",
+        icon: "💎",
         path: "first-Runes-based-blockchain",
       },
       {
         title: "Polygon CDK implementation",
-        icon: "",
+        icon: "🕎",
         path: "polygon-CDK-implementation",
       },
       {
         title: "Celestia DA integration",
-        icon: "",
+        icon: "♓",
         path: "celestia-DA-integration",
       },
       {
         title: "Valium Scaling solution",
-        icon: "",
+        icon: "♋",
         path: "valium-Scaling-solution",
       },
     ],
@@ -47,26 +49,26 @@ export const  menus = [
   {
     title: "BTC as the native token",
     path: "/bitcoinnano-economy/Bbtc-as-the-native-token",
-    icon: "",
+    icon: "🗝️",
   },
   {
     title: "Bitcoinnano Governance Token",
     path: "/bitcoinnano-economy/bitcoinnano-governance-oken",
-    icon: "",
+    icon: "🏪",
     accordian: [
       {
         title: "Decentralized Decision-Making",
-        icon: "",
+        icon: "🕸️",
         path: "/bitcoinnano-economy/bitcoinnano-governance-oken/decentralized-decision-making",
       },
       {
         title: "Transfer of Value",
-        icon: "",
+        icon: "💵",
         path: "/bitcoinnano-economy/bitcoinnano-governance-oken/transfer-of-value",
       },
       {
         title: "How to claim gOs Token",
-        icon: "",
+        icon: "💰",
         path: "/bitcoinnano-economy/bitcoinnano-governance-oken/how-to-claim-gos-token",
         accordian: [
           {
@@ -94,6 +96,23 @@ export const  menus = [
   {
     title: "gOs Allocation",
     path: "/bitcoinnano-economy/gos-allocation",
-    icon: "",
+    icon: "🪙",
+  },
+  { sectionTitle: "BITCOINNANO CONTRACT" },
+  {
+    title: "Bitcoinnano Contract",
+    path: "/bitcoinnano-contract/bitcoinnano-contract",
+    icon: "📔",
+  },
+  { sectionTitle: "BITCOINNANO ECOSYSTEM" },
+  {
+    title: "Cross-chain Bridge",
+    path: "/bitcoinnano-ecosystem/cross-chain-bridge",
+    icon: "🌉",
+  },
+  {
+    title: "Referral Program",
+    path: "/bitcoinnano-ecosystem/referral-program",
+    icon: "🗣️",
   },
 ];

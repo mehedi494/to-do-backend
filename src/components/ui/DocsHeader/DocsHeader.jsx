@@ -6,8 +6,8 @@ import docsIcon from "../../../assets/favicon.png";
 
 export default function DocsHeader() {
   return (
-    <div className=" bg-white">
-      <div className="max-w-screen-xl flex justify-between items-center mx-auto min-h-[80px] border-b px-2">
+    <div className=" bg-white border-b ">
+      <div className=" max-w-screen-xl flex justify-between items-center mx-auto min-h-[80px]  px-2">
         {/* left side  */}
         <div className="flex  items-center gap-x-2 w-80 text-gray-700">
           <div className=" inline px-2  sm:hidden">
