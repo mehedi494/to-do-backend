@@ -13,7 +13,7 @@ export default function DocumentsLayout({ children }) {
         <div className="w-full  bg-white font-poppins">
           <Outlet>{children}</Outlet>
         </div>
-        <div className="bg-white  h-screen w-80"></div>
+        <div className="bg-white   w-80"></div>
       </div>
     </div>
   );

@@ -6,8 +6,8 @@ export default function DocsSideBar({ children }) {
   const menuItem = menus;
 
   return (
-    <div>
-      <div className="bg-white  h-screen w-80 overflow-y-scroll pt-4 pl-6 pr-4 font-poppins text-[#8a8b8f] text-sm">
+    <div className="bg-white  ">
+      <div className=" w-80 overflow-y-scroll pt-4 pl-6 pr-4 font-poppins text-[#8a8b8f] text-sm">
         {/* Sidebar content goes here */}
         <ul>
           {menuItem.map((item, index) => {

@@ -6,12 +6,12 @@ export default function Foundation() {
   const doubleCard = [
     {
       leftTitle: "Welcome",
-      operation: "PREVIOUS",
+      operation: "Previous",
       path: "/docs",
     },
     {
       rightTitle: "current challanges",
-      operation: "NEXT",
+      operation: "Next",
       path: "/docs",
     },
   ];

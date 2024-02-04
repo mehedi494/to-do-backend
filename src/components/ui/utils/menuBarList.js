@@ -8,12 +8,12 @@ export const menus = [
       {
         title: "Current Challange",
         icon: "‼️",
-        path: "",
+        path: "/docs/current-challenges",
       },
       {
         title: "Whats problem does Bitcoinnano solve?",
         icon: "🔩",
-        path: "Whats-problem-does-Bitcoinnano-solve",
+        path: "/docs/whats-problem-does-bitcoinnano-solve",
       },
     ],
   },
