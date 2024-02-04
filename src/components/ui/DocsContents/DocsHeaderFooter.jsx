@@ -1,18 +1,27 @@
 import React from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import NavigationButton from "../NavigationButton/NavigationButton";
 
-export default function DocsHeaderFooter({icon, title, content, double, single }) {
+import LeftNavigationButton from "../NavigationButton/LeftNavigationButton";
+import RightNavigationButton from "../NavigationButton/RightNavigationButton";
+
+export default function DocsHeaderFooter({
+  icon,
+  title,
+  content,
+  doubleCard,
+  singleCard,
+}) {
+  console.log(doubleCard);
+
   let leftContent;
   let rightContent;
-  if (double) {
-    double.map((item) =>
-      item.leftTitle
-        ? (leftContent = item.leftItem)
-        : (rightContent = item.rightContent)
+  if (doubleCard) {
+    doubleCard.filter((item) =>
+      item.leftTitle ? (leftContent = item) : (rightContent = item)
     );
   }
   console.log(leftContent);
+  console.log(rightContent);
   return (
     <div className="p-4 py-6">
       <div className="flex items-center gap-x-4 text-[#262930]  ">
@@ -28,28 +37,42 @@ export default function DocsHeaderFooter({icon, title, content, double, single }
       {content}
 
       {/*  ****** */}
-      {double && (
-        <div>
-          {/* Previous Button */}
-          <NavigationButton
-            operation={leftContent?.operation}
-            title={rightContent?.rightTitle}
-            path={rightContent?.path}></NavigationButton>
+
+      {doubleCard && (
+        // Previous Button
+        <div className=" flex w-full">
+          <div className="w-[50%]">
+            <LeftNavigationButton
+              operation={leftContent?.operation}
+              title={leftContent?.leftTitle}
+              path={leftContent?.path}></LeftNavigationButton>
+          </div>
+
+          {/* Next button */}
+          <div className="w-[50%]">
+            <RightNavigationButton
+              operation={rightContent?.operation}
+              title={rightContent?.rightTitle}
+              path={rightContent?.path}></RightNavigationButton>
+          </div>
         </div>
-      ) && (
-        // Next Button
-        <NavigationButton
-          operation={rightContent?.operation}
-          title={rightContent?.title}
-          path={rightContent?.path}></NavigationButton>
       )}
+
       {/* Single only one */}
-      {single && (
-        <NavigationButton
-          operation={single?.operation}
-          title={single?.title}
-          path={single?.path}></NavigationButton>
-      )}
+      {singleCard?.position === "right" && (
+        <RightNavigationButton
+          operation={singleCard?.operation}
+          title={singleCard?.title}
+          path={singleCard?.path}></RightNavigationButton>
+      ) } 
+      {singleCard?.position === "left" &&<LeftNavigationButton
+        operation={singleCard?.operation}
+        title={singleCard?.title}
+        path={singleCard?.path}></LeftNavigationButton>}
+        
+      
+      <div className=" py-4 border-b"></div>
+      <div className="py-4 text-gray-500">Last modified 13d ago</div>
     </div>
   );
 }

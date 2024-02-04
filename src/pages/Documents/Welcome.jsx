@@ -3,10 +3,11 @@ import React from "react";
 import DocsHeaderFooter from "../../components/ui/DocsContents/DocsHeaderFooter";
 
 export default function Welcome() {
-  const single = {
+  const singleCard = {
     title: "Foundation",
-    operation: "NEXT",
+    operation: "Next",
     path: "/docs/foundation",
+    position:"right"
   };
   const content = (
     <p className="p-8">
@@ -21,9 +22,10 @@ export default function Welcome() {
   );
   return (
     <DocsHeaderFooter
-    icon={`👐`}
+      
+      icon={`👐`}
       title={`Welcome!`}
-      single={single}
+      singleCard={singleCard}
       content={content}></DocsHeaderFooter>
   );
 }
