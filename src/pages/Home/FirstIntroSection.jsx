@@ -3,9 +3,11 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import threDot from "../../assets/3dot.gif";
 import introCicle_1 from "../../assets/bitcoint-net-2.svg";
 import introCicle_2 from "../../assets/bitcoint-net.svg";
+import btcLogo from "../../assets/btc.png";
 import boxImg from "../../assets/btc_bridge_rotate_shape .svg";
 import introBg from "../../assets/intro_bg.png";
 import intro_pattern from "../../assets/intro_pattern.png";
+import bitcoinnanoLogo from "../../assets/logoBitcoinnano.png";
 
 export default function FirstIntroSection() {
   return (
@@ -18,7 +20,7 @@ export default function FirstIntroSection() {
         <div className="w-full  md:w-1/2 lg:w-1/2  flex flex-col-reverse gap-y-6 my-4  ">
           <div className="flex w-auto  gap-x-4  sm:h-auto px-4 ">
             <button className="group   bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:translate-x-1  rounded-lg text-white  sm:px-4  transition-transform transform py-4 px-8 ">
-              Run a Node <FaArrowRightLong className="inline"/>
+              Run a Node <FaArrowRightLong className="inline" />
             </button>
             <button className="border-1 px-4 bg-cyan-200   rounded-lg text-white border-gray-600 border ">
               Bridge to Bitcoinnano
@@ -30,9 +32,13 @@ export default function FirstIntroSection() {
               THE DAPP LAYER FOR BITCOIN ECOSYSTEM
             </h1>
             <p className="text-[#333333] text-sm sm:text-md lg:text-lg  font-medium ">
-              Designed to enhance Bitcoin capabilities, BITCOINNANO is your
-              gateway to a seamlessly connected, decentralized tomorrow. The
-              future of innovation starts here!
+              BitcoinNano (NanoCoin) is a units of Bitcoin, it is a biggest
+              memcoin on the Gelios Bitcoin Blockchain L2! 100% SAFU! 100% LP
+              Burnt! 100% Community Owned! 0% Buy/Sell Tax & CA Renounce! Don’t
+              miss yours life changing opportunity!
+            </p>
+            <p className="py-4 text-[#fc7411] font-semibold">
+              1,000,000,000 NanoCoin <img className="w-[120px] inline" src={bitcoinnanoLogo} alt="bitcoinnano-logo"/> = 1 BTC <img className="w-6 inline" src={btcLogo} alt="btc-logo"/>
             </p>
           </div>
           <div

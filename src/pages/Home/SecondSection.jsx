@@ -7,8 +7,9 @@ const SecondSection = () => {
         {/* left side */}
         <div className="w-full sm:w-1/2 md:w-1/2  p-8 font-baiJamjuree">
         <div className=" flex flex-col gap-y-8">
-          <h1 className="text-[#fd9623] text-2xl sm:text-3xl md:text-4xl lg:text-6xl" >BTC <span className="text-[#333333]">as</span> Native Token</h1>
-          <p className="text-[#727272]">With a vision to enrich the Bitcoin ecosystem, bitcoinnano utilizes BTC as its native token. This ensures immediate access for developers and users, guaranteeing security and stability, thereby enhancing overall functionality and user experience.</p>
+          <h1 className="font-semibold text-[#fd9623] text-xl sm:text-2xl md:text-3xl lg:text-4xl" >Vision: To make your <i className="text-[#333333]">life changing</i> financial freedom!</h1>
+          <h1 className="font-semibold text-[#333333] text-xl sm:text-2xl md:text-3xl lg:text-4xl" >Mission: To be the  <i className="text-[#fd9623]">top 10 </i> global <i className="text-[#fd9623]">digital payment!</i></h1>
+          {/* <p className="text-[#727272]">With a vision to enrich the Bitcoin ecosystem, bitcoinnano utilizes BTC as its native token. This ensures immediate access for developers and users, guaranteeing security and stability, thereby enhancing overall functionality and user experience.</p> */}
         </div>
         </div>
 

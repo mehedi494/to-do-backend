@@ -1,8 +1,115 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import btcBridge from "../../assets/btc_bridge.png";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "../../components/ui/table.js";
 
 export default function ThirdSection() {
+  const invoices = [
+    {
+      property: "Token name",
+      value: "BitcoinNano",
+    },
+    {
+      property: "Ticker",
+      value: "NanoCoin",
+    },
+    {
+      property: "Blockchian",
+      value: "Bitcoin Layer 2 (Gelios Blockchain) ",
+    },
+    {
+      property: "Total Supply",
+      value: "21,000,000,000,000,000 (100%)",
+    },
+    {
+      property: "Stake to Earn (Vesting 20years)",
+      value: "12,600,000,000,000,000 (60%)",
+    },
+    {
+      property: "Add Liquidity (Burnt)",
+      value: "4,200,000,000,000,000  (20%)",
+    },
+    {
+      property: "CEX Listing (Lock 3m)",
+      value: "2,100,000,000,000,000  (10%)",
+    },
+    {
+      property: "Marketing (Vesting 10m) ",
+      value: "2,100,000,000,000,000  (10%)",
+    },
+  ];
+
+  const staking_1 = [
+    {
+      year: 2024,
+      reward: "630000000000",
+      afterYear:2034,
+      reward_2: "630000000000",
+    },
+    {
+      year: 2025,
+      reward: "630000000000",
+      afterYear:2035,
+      reward_2: "630000000000"
+    },
+    {
+      year: 2026,
+      reward: "630000000000",
+      afterYear:2036,
+      reward_2: "630000000000"
+    },
+    {
+      year: 2027,
+      reward: "630000000000",
+      afterYear:2037,
+      reward_2: "630000000000"
+    },
+    {
+      year: 2028,
+      reward: "630000000000",
+      afterYear:2038,
+      reward_2: "630000000000"
+    },
+    {
+      year: 2029,
+      reward: "630000000000",
+      afterYear:2039,
+      reward_2: "630000000000"
+    },
+    {
+      year: 2030,
+      reward: "630000000000",
+      afterYear:2040,
+      reward_2: "630000000000"
+    },
+    {
+      year: 2031,
+      reward: "630000000000",
+      afterYear:2041,
+      reward_2: "630000000000"
+    },
+    {
+      year: 2032,
+      reward: "630000000000",
+      afterYear:2042,
+      reward_2: "630000000000"
+    },
+    {
+      year: 2033,
+      reward: "630000000000",
+      afterYear:2043,
+      reward_2: "630000000000"
+    },
+   
+  ];
+ 
   return (
     <div className="max-w-7xl mx-auto font-baiJamjuree">
       <div>
@@ -28,11 +135,84 @@ export default function ThirdSection() {
           </div>
           <div className="flex justify-center ">
             <button className="group bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80  text-2xl rounded-lg text-white  items-center flex px-16 p-4 gap-x-4 transition-transform transform hover:scale-95 ">
-              Bridge <FaArrowRightLong className="inline group-hover:translate-x-1 group-hover:transition-transform transform" />
+              Bridge{" "}
+              <FaArrowRightLong className="inline group-hover:translate-x-1 group-hover:transition-transform transform" />
             </button>
           </div>
         </div>
       </div>
+      {/* Table data
+       */}
+      <div className="flex  items-center sm:flex-row flex-col">
+        <div className="py-8 px-4 flex flex-col  w-full  justify-center">
+          <h1 className="font-bold text-center text-lg">Tokenomic</h1>
+          <Table className="border">
+            <TableHeader>
+              <TableRow className="bg-[#fea72b] text-white">
+                <TableHead className="font-bold">Properties</TableHead>
+                <TableHead className="font-bold">Value</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {invoices.map((invoice) => (
+                <TableRow key={invoice.property}>
+                  <TableCell className="font-medium w-[200px]">
+                    {invoice.property}
+                  </TableCell>
+                  <TableCell className="w-[200px]">{invoice.value}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+        <div className="w-full flex items-center justify-center">
+          <button className="group  sm:p-2 h-[60px] bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl w-[200px] font-bold transition-transform transform border border-[#999898]  hover:border hover:border-white group-hover:transition group-hover:duration-700 text-white ">
+            Pre-Sale
+            <FaArrowRightLong className="inline ml-2 group-hover:translate-x-1 group-hover:transition-transform transform " />
+          </button>
+        </div>
+      </div>
+      <div className="flex  items-center sm:flex-row flex-col py-8">
+        <div className="w-full flex flex-col items-center justify-end gap-y-5">
+          <p className="text-2xl font-semibold italic text-[#fea72b]">Link Dapp to <span className=" text-[#333333]">Staking program</span></p>
+          <p className="text-2xl font-semibold italic text-[#fea72b]"><span className=" text-[#333333]">Stake BTC to</span> earn NanoCoin</p>
+          <p className="text-2xl font-semibold italic text-[#fea72b]">Stake sGol to <span className=" text-[#333333]">earn NanoCoin</span></p>
+          <p className="text-2xl font-semibold italic text-[#fea72b]"><span className=" text-[#333333]">Stake BNB</span> to earn NanoCoin</p>
+        </div>
+
+        {/* staking Program table */}
+        <div className="py-8 px-4 flex flex-col  w-full  justify-center">
+          <h1 className="font-bold text-center text-lg">Staking to Earn 20 years program  </h1>
+         
+            <Table className="border">
+              <TableHeader>
+                <TableRow className="bg-[#fea72b] text-white">
+                  <TableHead className="font-bold">Year</TableHead>
+                  <TableHead className="font-bold">Reward/Year</TableHead>
+                  <TableHead className="font-bold">Year</TableHead>
+                  <TableHead className="font-bold">Reward/Year</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {staking_1.map((invoice) => (
+                  <TableRow key={invoice.year}>
+                    <TableCell className="font-medium h-2 ">
+                      {invoice.year}
+                    </TableCell>
+                    <TableCell className="">{invoice.reward}</TableCell>
+                    <TableCell className="">{invoice.afterYear}</TableCell>
+                    <TableCell className="">{invoice.reward_2}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+
+            
+         
+        </div>
+      </div>
+
+      <div></div>
     </div>
   );
 }
