@@ -55,7 +55,7 @@ export const menus = [
   },
   {
     title: "Bitcoinnano Governance Token",
-    path: "/bitcoinnano-economy/bitcoinnano-governance-oken",
+    path: "/docs/bitcoinnano-economy/bitcoinnano-governance-token",
     icon: "🏪",
     accordian: [
       {

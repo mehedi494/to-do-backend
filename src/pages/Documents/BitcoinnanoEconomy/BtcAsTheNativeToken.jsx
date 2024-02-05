@@ -6,12 +6,12 @@ export default function BtcAsTheNativeToken() {
     {
       leftTitle: "Valium scaling solution",
       operation: "Previous",
-      path: "/docs/bitcoinnano-blockchain/valium-scaling-solution",
+      path: "/docs/bitcoinnano-economy/btc-as-the-native-token",
     },
     {
       rightTitle: "Bitcoinnano Governance Token",
       operation: "Next",
-      path: "/docs/bitcoinnano-governance-token",
+      path: "/docs/bitcoinnano-economy/bitcoinnano-governance-token",
     },
   ];
 

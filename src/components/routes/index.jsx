@@ -4,6 +4,7 @@ import CelestiaDaIntregation from "../../pages/Documents/BitcoinnanoBlockChain/C
 import FirstRunesBaseBlockChain from "../../pages/Documents/BitcoinnanoBlockChain/FirstRunesBaseBlockChain";
 import PolygonSdkImplemention from "../../pages/Documents/BitcoinnanoBlockChain/PolygonSdkImplemention";
 import ValiumScalingSolution from "../../pages/Documents/BitcoinnanoBlockChain/ValiumScalingSolution";
+import BitcoinnanoGovernanceToken from "../../pages/Documents/BitcoinnanoEconomy/BitcoinnanoGovernanceToken/BitcoinnanoGovernanceToken";
 import BtcAsTheNativeToken from "../../pages/Documents/BitcoinnanoEconomy/BtcAsTheNativeToken";
 import CurrentChallenges from "../../pages/Documents/Foundation/CurrentChallenges";
 import Foundation from "../../pages/Documents/Foundation/Foundation";
@@ -82,7 +83,11 @@ const router = createBrowserRouter([
       {
         path:"/docs/bitcoinnano-economy/btc-as-the-native-token",
         element:<BtcAsTheNativeToken />,
-      }
+      },
+      {
+        path:"/docs/bitcoinnano-economy/bitcoinnano-governance-token",
+        element:<BitcoinnanoGovernanceToken />,
+      },
     ],
   },
 ]);
