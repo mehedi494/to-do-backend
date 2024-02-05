@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import DocsHeaderFooter from "../../../components/ui/DocsContents/DocsHeaderFooter";
 
 export default function PolygonSdkImplemention() {
@@ -27,7 +26,7 @@ export default function PolygonSdkImplemention() {
       </p>
 
       <div className="py-4">
-        <h1 className="font-bold text-xl" id="scalability">
+        <h1 className="font-semibold text-lg" id="scalability">
           MODULARITY & CUSTOMIZATION
         </h1>
         <p className="pt-4">
@@ -38,7 +37,7 @@ export default function PolygonSdkImplemention() {
         </p>
       </div>
       <div className="py-4 " id="interoperability">
-        <h1 className="font-bold text-xl">SCALABILITY </h1>
+        <h1 className="font-semibold text-lg">SCALABILITY </h1>
         <p className="pt-4">
           Adoption of Polygon CDK significantly enhances Gelios' scalability by
           offloading transaction processing. This strategic move translates to
@@ -47,7 +46,7 @@ export default function PolygonSdkImplemention() {
         </p>
       </div>
       <div className="py-4 " id="interoperability">
-        <h1 className="font-bold text-xl">DATA INTEGRITY & RESILIENCE </h1>
+        <h1 className="font-semibold text-lg">DATA INTEGRITY & RESILIENCE </h1>
         <p className="pt-4">
           Bitcoinnano employs a dedicated Data Availability Committee (DAC) to
           ensure reliable access to off-chain data, fortifying Gelios against
@@ -56,7 +55,7 @@ export default function PolygonSdkImplemention() {
         </p>
       </div>
       <div className="py-4 " id="interoperability">
-        <h1 className="font-bold text-xl">INTEROPERABILITY </h1>
+        <h1 className="font-semibold text-lg">INTEROPERABILITY </h1>
         <p className="pt-4">
           The integration of Polygon CDK magnifies Gelios' interoperability
           prowess, facilitating seamless asset and data transfers between the
@@ -66,7 +65,7 @@ export default function PolygonSdkImplemention() {
         </p>
       </div>
       <div className="py-4 " id="interoperability">
-        <h1 className="font-bold text-xl">NEAR-INSTANT FINALITY </h1>
+        <h1 className="font-semibold text-lg">NEAR-INSTANT FINALITY </h1>
         <p className="pt-4">
           bitcoinnano relies on cryptographic security mechanisms for
           near-instant finality. This ensures transaction integrity without the
@@ -75,7 +74,7 @@ export default function PolygonSdkImplemention() {
         </p>
       </div>
       <div className="py-4 " id="interoperability">
-        <h1 className="font-bold text-xl">INTENSIVE WEB3 SUPPORT </h1>
+        <h1 className="font-semibold text-lg">INTENSIVE WEB3 SUPPORT </h1>
         <p className="pt-4">
           Gelios integrates seamlessly with the broader Web3 ecosystem,
           capitalizing on a comprehensive network of premium service providers.
