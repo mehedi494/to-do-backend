@@ -10,20 +10,21 @@ export default function Accordion({ contents }) {
   return (
     <div className="  mb-2">
       {/* Accordion Title/headline here */}
-      <div
-        className="flex justify-between items-center cursor-pointer
+      <Link to={contents.path}>
+        <div
+          className="flex justify-between items-center cursor-pointer
       hover:bg-gray-200  p-1 rounded pb-2 pl-2
       ">
-        <Link to={contents.path}>
           <div className="flex w-full items-center gap-x-4  ">
             <span className="text-lg">{contents.icon}</span>
             <li>{contents.title}</li>
           </div>
-        </Link>
-        <span onClick={() => setIsOpen(!isOpen)} className="text-gray-500 ">
-          {isOpen ? <IoIosArrowDown /> : <IoIosArrowForward />}
-        </span>
-      </div>
+
+          <span onClick={() => setIsOpen(!isOpen)} className="text-gray-500 ">
+            {isOpen ? <IoIosArrowDown /> : <IoIosArrowForward />}
+          </span>
+        </div>
+      </Link>
 
       {/* Accordion Contents/sub accordion here */}
       <div className="flex items-center justify-between  ">

@@ -1,6 +1,6 @@
 import React from "react";
 
-import DocsHeaderFooter from "../../components/ui/DocsContents/DocsHeaderFooter";
+import DocsHeaderFooter from "../../../components/ui/DocsContents/DocsHeaderFooter";
 
 export default function WhatDoesBitcoinnanoSolve() {
   const doubleCard = [

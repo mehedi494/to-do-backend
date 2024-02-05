@@ -8,39 +8,41 @@ export const menus = [
       {
         title: "Current Challange",
         icon: "‼️",
-        path: "/docs/current-challenges",
+        path: "/docs/foundation/current-challenges",
       },
       {
         title: "Whats problem does Bitcoinnano solve?",
         icon: "🔩",
-        path: "/docs/whats-problem-does-bitcoinnano-solve",
+        path: "/docs/foundation/whats-problem-does-bitcoinnano-solve",
       },
     ],
   },
+
+  /* Bitcoinnano blockchain */
   {
     title: "Bitcoinnano Blockchain",
-    path: "/",
+    path: "/docs/bitcoinnano-blockchain",
     icon: "🎮",
     accordian: [
       {
         title: "First Runes-based blockchain",
         icon: "💎",
-        path: "first-Runes-based-blockchain",
+        path: "/docs/bitcoinnano-blockchain/first-Runes-based-blockchain",
       },
       {
         title: "Polygon CDK implementation",
         icon: "🕎",
-        path: "polygon-CDK-implementation",
+        path: "/docs/bitcoinnano-blockchain/polygon-cdk-implementation",
       },
       {
         title: "Celestia DA integration",
         icon: "♓",
-        path: "celestia-DA-integration",
+        path: "/docs/bitcoinnano-blockchain/celestia-da-integration",
       },
       {
         title: "Valium Scaling solution",
         icon: "♋",
-        path: "valium-Scaling-solution",
+        path: "/docs/bitcoinnano-blockchain/valium-scaling-solution",
       },
     ],
   },
