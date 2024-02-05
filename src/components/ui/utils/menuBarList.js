@@ -50,7 +50,7 @@ export const menus = [
   { sectionTitle: "BITCOINNANO ECONOMY" },
   {
     title: "BTC as the native token",
-    path: "/bitcoinnano-economy/Bbtc-as-the-native-token",
+    path: "/docs/bitcoinnano-economy/btc-as-the-native-token",
     icon: "🗝️",
   },
   {

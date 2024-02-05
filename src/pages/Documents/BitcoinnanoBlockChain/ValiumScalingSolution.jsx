@@ -11,7 +11,7 @@ export default function ValiumScalingSolution() {
     {
       rightTitle: "BTC as the Native token ",
       operation: "Next",
-      path: "/docs/bitcoinnano-blockchain/btc-as-the-native-token",
+      path: "/docs/bitcoinnano-economy/btc-as-the-native-token",
     },
   ];
 
