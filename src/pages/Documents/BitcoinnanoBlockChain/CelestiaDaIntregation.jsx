@@ -5,7 +5,7 @@ import DocsHeaderFooter from "../../../components/ui/DocsContents/DocsHeaderFoot
 export default function CelestiaDaIntregation() {
   const doubleCard = [
     {
-      leftTitle: "First Runes Based Blockchain",
+      leftTitle: "Polygon CDK Implementation",
       operation: "Previous",
       path: "/docs/bitcoinnano-blockchain/polygon-cdk-implementation",
     },

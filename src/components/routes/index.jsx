@@ -1,4 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
+import BitcoinnanoBlockChain from "../../pages/Documents/BitcoinnanoBlockChain/BitcoinnanoBlockChain";
+import CelestiaDaIntregation from "../../pages/Documents/BitcoinnanoBlockChain/CelestiaDaIntregation";
+import FirstRunesBaseBlockChain from "../../pages/Documents/BitcoinnanoBlockChain/FirstRunesBaseBlockChain";
+import PolygonSdkImplemention from "../../pages/Documents/BitcoinnanoBlockChain/PolygonSdkImplemention";
+import ValiumScalingSolution from "../../pages/Documents/BitcoinnanoBlockChain/ValiumScalingSolution";
+import BtcAsTheNativeToken from "../../pages/Documents/BitcoinnanoEconomy/BtcAsTheNativeToken";
 import CurrentChallenges from "../../pages/Documents/Foundation/CurrentChallenges";
 import Foundation from "../../pages/Documents/Foundation/Foundation";
 import WhatDoesBitcoinnanoSolve from "../../pages/Documents/Foundation/WhatDoesBitcoinnanoSolve";
@@ -7,11 +13,6 @@ import EntryMain from "../../pages/Entry/EntryMain";
 import HomeMain from "../../pages/Home/HomeMain";
 import DocumentsLayout from "../layout/DocumentsLayout";
 import Main from "../layout/main";
-import BitcoinnanoBlockChain from "../../pages/Documents/BitcoinnanoGoveranceToken/BitcoinnanoBlockChain";
-import FirstRunesBaseBlockChain from "../../pages/Documents/BitcoinnanoGoveranceToken/FirstRunesBaseBlockChain";
-import PolygonSdkImplemention from "../../pages/Documents/BitcoinnanoGoveranceToken/PolygonSdkImplemention";
-import CelestiaDaIntregation from "../../pages/Documents/BitcoinnanoGoveranceToken/CelestiaDaIntregation";
-import ValiumScalingSolution from "../../pages/Documents/BitcoinnanoGoveranceToken/ValiumScalingSolution";
 
 const router = createBrowserRouter([
   {
@@ -74,6 +75,14 @@ const router = createBrowserRouter([
         path: "/docs/bitcoinnano-blockchain/valium-scaling-solution",
         element: <ValiumScalingSolution />,
       },
+
+
+      /* BITCOIN NANO ECONOMY  */
+
+      {
+        path:"/docs/bitcoinnano-economy/btc-as-the-native-token",
+        element:<BtcAsTheNativeToken />,
+      }
     ],
   },
 ]);

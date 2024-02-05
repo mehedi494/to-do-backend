@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import DocsHeaderFooter from "../../../components/ui/DocsContents/DocsHeaderFooter";
+import DocsHeaderFooter from "../../../components/ui/DocsContents/DocsHeaderFooter.jsx";
 import {
   Table,
   TableBody,
