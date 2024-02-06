@@ -105,16 +105,7 @@ export default function Header() {
               </li>
             </Link>
 
-            <NestedMenu
-              menuText="Explore"
-              subMenu={[
-                { subMenuText: "Bitcoinnano Explorer", path: "/#" },
-                { subMenuText: "Bridge BTC/wBTC", path: "/#" },
-                { subMenuText: "Run a node", path: "/#" },
-                { subMenuText: "DAO Model", path: "/#" },
-              ]}
-              icon={<FaAngleDown className="inline" />}
-              link="/"></NestedMenu>
+           
 
             <NestedMenu
               menuText="Community"
@@ -141,9 +132,7 @@ export default function Header() {
               </li>
             </Link>
             <Link to="/#">
-              <li className="hidden md:hidden lg:hidden xl:inline  sm:hidden hover:text-[#fc690b] transition duration-200">
-                Docs
-              </li>
+             
             </Link>
             <Link to="/#" className="">
               <button className="group hidden sm:hiiden md:inline sm:p-2 h-[60px] bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl w-[200px] font-bold transition-transform transform border border-[#3e3e3e]  hover:border hover:border-white group-hover:transition group-hover:duration-700 ">

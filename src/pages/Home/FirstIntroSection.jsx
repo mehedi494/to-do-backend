@@ -83,7 +83,7 @@ export default function FirstIntroSection() {
 
       {/* third section  */}
 
-      <h1 className="text-center text-6xl text-zinc-600">Partnership</h1>
+      
       <div className="relative w-full bg-cover h-auto bg-center bg-no-repeat">
         {/* Background for large devices */}
 
