@@ -28,7 +28,7 @@ export default function Header() {
       menuText: "Home",
       path: "/#",
     },
-    {
+    /* {
       menuText: "Explore",
       path: "/#",
       isAccordion: true,
@@ -38,11 +38,11 @@ export default function Header() {
         { subMenuText: "Run a node", path: "/#" },
         { subMenuText: "DAO Model", path: "/#" },
       ],
-    },
-    {
+    }, */
+    /* {
       menuText: "Docs",
       path: "/#",
-    },
+    }, */
     {
       menuText: "Community",
       path: "/",
@@ -67,10 +67,10 @@ export default function Header() {
       menuText: "Ecosystem",
       path: "/",
     },
-    {
+    /* {
       menuText: "Docs",
       path: "/",
-    },
+    }, */
   ];
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -147,8 +147,8 @@ export default function Header() {
             </Link>
             <Link to="/#" className="">
               <button className="group hidden sm:hiiden md:inline sm:p-2 h-[60px] bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl w-[200px] font-bold transition-transform transform border border-[#3e3e3e]  hover:border hover:border-white group-hover:transition group-hover:duration-700 ">
-                Mint Entry Key{" "}
-                <FaArrowRightLong className="inline group-hover:translate-x-1 group-hover:transition-transform transform " />
+                Buy NANO
+                <FaArrowRightLong className="inline ml-2 group-hover:translate-x-1 group-hover:transition-transform transform " />
               </button>
             </Link>
 
