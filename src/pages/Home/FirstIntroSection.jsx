@@ -7,11 +7,15 @@ import intro_pattern from "../../assets/intro_pattern.png";
 import boxImg from "../../assets/nanoBox.svg";
 import nanoCoinLogo from "../../assets/nanoCoin.png";
 
-import partnerLogo_2 from "../../assets/partners_logo/befi-labs.png";
-import partnerLogo_1 from "../../assets/partners_logo/bitx.png";
-import partnerLogo_3 from "../../assets/partners_logo/dmail.png";
-import partnerLogo_4 from "../../assets/partners_logo/sugar-kingdom-nft.png";
-import partnerLogo_5 from "../../assets/partners_logo/unisat.png";
+import partnerLogo_1 from "../../assets/partners_logo/crop/GeniiData_crop.png";
+import partnerLogo_2 from "../../assets/partners_logo/crop/CoinMarketCap_crop.png";
+import partnerLogo_3 from "../../assets/partners_logo/crop/binanance_crop.png";
+import partnerLogo_4 from "../../assets/partners_logo/crop/bybit_crop.png";
+import partnerLogo_5 from "../../assets/partners_logo/crop/coingecko_crop.png";
+import partnerLogo_6 from "../../assets/partners_logo/crop/okx_crop.png";
+import partnerLogo_7 from "../../assets/partners_logo/crop/ordinals_crop.png";
+import partnerLogo_8 from "../../assets/partners_logo/crop/unisat.png";
+
 
 export default function FirstIntroSection() {
   const partnerLogo = [
@@ -20,6 +24,9 @@ export default function FirstIntroSection() {
     partnerLogo_3,
     partnerLogo_4,
     partnerLogo_5,
+    partnerLogo_6,
+    partnerLogo_7,
+    partnerLogo_8,
   ];
   return (
     <div
@@ -91,9 +98,9 @@ export default function FirstIntroSection() {
           className="hidden -z-10  lg:block absolute inset-0 bg-cover bg-center bg-no-repeat "
           style={{ backgroundImage: `url(${intro_pattern})` }}></div>
         <div className=" font-baiJamjuree text-sm p-4  max-w-7xl py-8">
-          <div className="grid grid-cols-2 gap-2 md:grid-cols-5 items-center justify-center">
+          <div className="grid grid-cols-2 gap-2 md:grid-cols-8 justify-center items-center ">
             {partnerLogo.map((logo, index) => (
-              <img key={index} className="w-32" src={logo} alt="" />
+              <img key={index} className="w-20" src={logo} alt="" />
             ))}
           </div>
         </div>
