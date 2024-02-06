@@ -201,7 +201,7 @@ export default function ThirdSection() {
             </TableBody>
           </Table>
         </div>
-        <div className=" w-full flex justify-center ">
+        <div className=" w-[50%] flex justify-center ">
           <DoughNutPieChart data={data}></DoughNutPieChart></div>
        
       </div>
