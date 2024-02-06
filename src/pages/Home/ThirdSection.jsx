@@ -1,6 +1,7 @@
 import React from "react";
 
 import nanoBridge from "../../assets/nanoBridge.svg";
+import DoughNutPieChart from "../../components/ui/PieChart.jsx";
 import {
   Table,
   TableBody,
@@ -9,7 +10,6 @@ import {
   TableHeader,
   TableRow,
 } from "../../components/ui/table.js";
-import DoughNutPieChart from "../../components/ui/PieChart.jsx";
 
 export default function ThirdSection() {
   const invoices = [
@@ -147,14 +147,14 @@ export default function ThirdSection() {
   };
 
   return (
-    <div className="max-w-7xl -mt-44 mx-auto font-baiJamjuree">
+    <div className="max-w-7xl -mt-20 mx-auto font-baiJamjuree">
       <div>
         <div className="flex flex-col gap-y-4">
-          <div className="flex  justify-center l">
-            <img w-full  src={nanoBridge} alt="" />
+          <div className="flex  justify-center ">
+            <img w-full src={nanoBridge} alt="" />
           </div>
           <div className="w-[80%] mx-auto">
-            <h1 className="text-center font-semibold text-[#fd9623] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="text-center font-semibold text-[#fd9623] text-lg sm:text-4xl md:text-5xl lg:text-6xl">
               BRIDGING BTC/ WBTC <span className="text-[#333333]">BETWEEN</span>{" "}
               BITCOINNANO, BITCOIN <span className="text-[#333333]"> AND</span>{" "}
               EVMS
@@ -169,14 +169,10 @@ export default function ThirdSection() {
               versa, unlocking vast DeFi opportunities.{" "}
             </p>
           </div>
-          <div className="flex justify-center ">
-          {/*   <button className="group bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80  text-2xl rounded-lg text-white  items-center flex px-16 p-4 gap-x-4 transition-transform transform hover:scale-95 ">
-              Bridge{" "}
-              <FaArrowRightLong className="inline group-hover:translate-x-1 group-hover:transition-transform transform" />
-            </button> */}
-          </div>
+          <div className="flex justify-center "></div>
         </div>
       </div>
+
       {/* Table data
        */}
       <div className="flex  items-center justify-center sm:flex-row flex-col">
@@ -201,23 +197,28 @@ export default function ThirdSection() {
             </TableBody>
           </Table>
         </div>
-        <div className=" w-[50%] flex justify-center ">
-          <DoughNutPieChart data={data}></DoughNutPieChart></div>
-       
+
+        {/* Pie Chart */}
+        <div className=" sm:w-[100%] flex justify-center ">
+          <div className="w-full sm:w-1/2 ">
+            <DoughNutPieChart data={data}></DoughNutPieChart>
+          </div>
+        </div>
       </div>
+
       <div className="flex  items-center sm:flex-row flex-col py-8">
-        <div className="w-full flex flex-col items-center justify-end gap-y-5">
-          <p className="text-2xl font-semibold italic text-[#fea72b]">
+        <div className="w-full flex flex-col items-center justify-end gap-y-5 self-center p-4 text-lg sm:text-2xl">
+          <p className=" font-semibold italic text-[#fea72b]">
             Link Dapp to{" "}
             <span className=" text-[#333333]">Staking program</span>
           </p>
-          <p className="text-2xl font-semibold italic text-[#fea72b]">
+          <p className=" font-semibold italic text-[#fea72b]">
             <span className=" text-[#333333]">Stake BTC to</span> earn NanoCoin
           </p>
-          <p className="text-2xl font-semibold italic text-[#fea72b]">
+          <p className=" font-semibold italic text-[#fea72b]">
             Stake sGol to <span className=" text-[#333333]">earn NanoCoin</span>
           </p>
-          <p className="text-2xl font-semibold italic text-[#fea72b]">
+          <p className=" font-semibold italic text-[#fea72b]">
             <span className=" text-[#333333]">Stake BNB</span> to earn NanoCoin
           </p>
         </div>

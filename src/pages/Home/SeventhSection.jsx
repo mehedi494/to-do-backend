@@ -29,7 +29,7 @@ export default function SeventhSection() {
   ];
   return (
     <div>
-      <div className="max-w-7xl mx-auto p-16 font-baiJamjuree">
+      <div className="max-w-7xl mx-auto  font-baiJamjuree">
         <div className="w-full sm:w-[90%] text-center mx-auto flex  justify-center flex-wrap gap-y-5 py-4">
           <h1 className="text-xl sm:text-5xl font-semibold text-[#333333]">
             Explore Bitcoinnano Ecosystem
@@ -41,7 +41,7 @@ export default function SeventhSection() {
           </p>
         </div>
         {/* card */}
-        <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-4 justify-center items-center">
+        <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-2  gap-4 justify-items-center items-center">
           {/* maping on card */}
           {cardContent.map((card, index) => (
             <div className="flex flex-col gap-y-2 max-w-[350px] max-h-[600px] bg-white border shadow-md p-4 rounded-xl">
