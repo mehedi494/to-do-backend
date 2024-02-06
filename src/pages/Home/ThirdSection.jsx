@@ -1,6 +1,6 @@
 import React from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
-import btcBridge from "../../assets/btc_bridge.png";
+
+import nanoBridge from "../../assets/nanoBridge.svg";
 import {
   Table,
   TableBody,
@@ -151,7 +151,7 @@ export default function ThirdSection() {
       <div>
         <div className="flex flex-col gap-y-4">
           <div className="min-w-64 w-2/3 mx-auto">
-            <img src={btcBridge} alt="" />
+            <img src={nanoBridge} alt="" />
           </div>
           <div className="w-[80%] mx-auto">
             <h1 className="text-center font-semibold text-[#fd9623] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">

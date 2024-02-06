@@ -2,13 +2,13 @@ import React from "react";
 import introCicle_1 from "../../assets/bitcoint-net-2.svg";
 import introCicle_2 from "../../assets/bitcoint-net.svg";
 import btcLogo from "../../assets/btc.png";
-import boxImg from "../../assets/btc_bridge_rotate_shape .svg";
 import introBg from "../../assets/intro_bg.png";
 import intro_pattern from "../../assets/intro_pattern.png";
+import boxImg from "../../assets/nanoBox.svg";
 import nanoCoinLogo from "../../assets/nanoCoin.png";
 
-import partnerLogo_1 from "../../assets/partners_logo/bitx.png";
 import partnerLogo_2 from "../../assets/partners_logo/befi-labs.png";
+import partnerLogo_1 from "../../assets/partners_logo/bitx.png";
 import partnerLogo_3 from "../../assets/partners_logo/dmail.png";
 import partnerLogo_4 from "../../assets/partners_logo/sugar-kingdom-nft.png";
 import partnerLogo_5 from "../../assets/partners_logo/unisat.png";
@@ -71,7 +71,7 @@ export default function FirstIntroSection() {
                 title="bitcoin-lifecyle"
               />
               <img
-                className="-z-10 w-64 absolute    h-full text-blue-500 animate-moveUp"
+                className="-z-10  absolute    h-full text-blue-500 animate-moveUp"
                 src={boxImg}
                 alt="into-img"
                 title="bitcoin-lifecyle"

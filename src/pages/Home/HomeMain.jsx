@@ -12,9 +12,9 @@ export default function HomeMain() {
     <FirstIntroSection></FirstIntroSection>
     <SecondSection></SecondSection>
     <ThirdSection></ThirdSection>
-    <FourthSection></FourthSection>
+    {/* <FourthSection></FourthSection>
     <FifthSection></FifthSection> 
-     <SixthSection></SixthSection>
+     <SixthSection></SixthSection> */}
      <SeventhSection></SeventhSection>
     
   </div>;
