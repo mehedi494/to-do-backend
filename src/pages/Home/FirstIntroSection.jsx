@@ -41,20 +41,21 @@ export default function FirstIntroSection() {
               COIN WITH UTILITY FOR BITCOIN ECOSYSTEM
             </h1>
             <p className="text-[#333333] text-sm sm:text-md lg:text-lg  font-medium ">
-              BitcoinNano (NanoCoin) is a units of Bitcoin, it is a biggest
-              memcoin on the Gelios Bitcoin Blockchain L2! 100% SAFU! 100% LP
-              Burnt! 100% Community Owned! 0% Buy/Sell Tax & CA Renounce! Don’t
-              miss yours life changing opportunity!
+              BitcoinNano (NAN0) is a unit of Bitcoin 💰, it's a biggest & first
+              meme coin with utilities for Bitcoin Ecosystem 💰. In the future,
+              it will be used for the global payment system such as in-store,
+              online & real world asset payment! 100% SAFU! OG Team! Strong
+              Community! Don't miss your life changing opportunity....!
             </p>
-            <p className="py-4 text-[#fc7411] font-extrabold italic">
-              <code><i className="text-[#3e3e3e]"> 1,000,000,000 Nano </i>
+            <p className="py-4 text-xl sm:text-2xl lg:text-4xl  font-medium text-[#fc7411]  italic">
+              <i className=""> 1,000,000,000 Nano </i>
               <img
-                className="w-[24px] inline"
+                className="w-[34px] inline"
                 src={nanoCoinLogo}
                 alt="bitcoinnano-logo"
               />{" "}
               = 1 BTC{" "}
-              <img className="w-6 inline " src={btcLogo} alt="btc-logo" /></code>
+              <img className="w-8 inline " src={btcLogo} alt="btc-logo" />
             </p>
           </div>
           {/*  <div
@@ -77,7 +78,7 @@ export default function FirstIntroSection() {
                 title="bitcoin-lifecyle"
               />
               <img
-                className="-z-10  absolute mb-20 sm:mb-40 mr-40   h-full text-blue-500 animate-moveUp"
+                className="-z-10  absolute mb-20 sm:mb-40 mr-40   h-full text-blue-500 animate-moveUp rotate-180"
                 src={boxImg}
                 alt="into-img"
                 title="bitcoin-lifecyle"
