@@ -41,8 +41,8 @@ export default function FirstIntroSection() {
               COIN WITH UTILITY FOR BITCOIN ECOSYSTEM
             </h1>
             <p className="text-[#333333] text-sm sm:text-md lg:text-lg  font-medium ">
-              BitcoinNano (NAN0) is a unit of Bitcoin 💰, it's a biggest & first
-              meme coin with utilities for Bitcoin Ecosystem 💰. In the future,
+              BitcoinNano (NAN0) is a unit of Bitcoin <img className="w-5 inline " src={btcLogo} alt="btc-logo" /> {""}, it's a biggest & first
+              meme coin with utilities for Bitcoin Ecosystem <img className="w-5 inline " src={btcLogo} alt="btc-logo" /> {' '}. In the future,
               it will be used for the global payment system such as in-store,
               online & real world asset payment! 100% SAFU! OG Team! Strong
               Community! Don't miss your life changing opportunity....!
@@ -78,7 +78,7 @@ export default function FirstIntroSection() {
                 title="bitcoin-lifecyle"
               />
               <img
-                className="-z-10  absolute mb-20 sm:mb-40 mr-40   h-full text-blue-500 animate-moveUp rotate-180"
+                className="-z-10  absolute    h-full text-blue-500 animate-moveUp rotate-180"
                 src={boxImg}
                 alt="into-img"
                 title="bitcoin-lifecyle"
