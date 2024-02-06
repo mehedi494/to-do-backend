@@ -91,7 +91,7 @@ export default function FirstIntroSection() {
           className="hidden -z-10  lg:block absolute inset-0 bg-cover bg-center bg-no-repeat "
           style={{ backgroundImage: `url(${intro_pattern})` }}></div>
         <div className=" font-baiJamjuree text-sm p-4  max-w-7xl py-8">
-          <div className="grid  grid-cols-5 items-center justify-center">
+          <div className="grid grid-cols-2 gap-2 md:grid-cols-5 items-center justify-center">
             {partnerLogo.map((logo, index) => (
               <img key={index} className="w-32" src={logo} alt="" />
             ))}
