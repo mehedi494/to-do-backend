@@ -1,11 +1,8 @@
 import React from "react";
 import FirstIntroSection from "./FirstIntroSection";
 import SecondSection from "./SecondSection";
-import ThirdSection from "./ThirdSection";
-import FourthSection from "./FourthSection";
-import FifthSection from "./FifthSection";
-import SixthSection from "./SixthSection";
 import SeventhSection from "./SeventhSection";
+import ThirdSection from "./ThirdSection";
 
 export default function HomeMain() {
   return <div>

@@ -147,11 +147,11 @@ export default function ThirdSection() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto font-baiJamjuree">
+    <div className="max-w-7xl -mt-44 mx-auto font-baiJamjuree">
       <div>
         <div className="flex flex-col gap-y-4">
-          <div className="min-w-64 w-2/3 mx-auto">
-            <img src={nanoBridge} alt="" />
+          <div className="flex  justify-center l">
+            <img w-full  src={nanoBridge} alt="" />
           </div>
           <div className="w-[80%] mx-auto">
             <h1 className="text-center font-semibold text-[#fd9623] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
