@@ -47,68 +47,68 @@ export default function ThirdSection() {
     },
   ];
 
-  const staking_1 = [
-    {
-      year: 2024,
-      reward: "630000000000",
-      afterYear: 2034,
-      reward_2: "630000000000",
-    },
-    {
-      year: 2025,
-      reward: "630000000000",
-      afterYear: 2035,
-      reward_2: "630000000000",
-    },
-    {
-      year: 2026,
-      reward: "630000000000",
-      afterYear: 2036,
-      reward_2: "630000000000",
-    },
-    {
-      year: 2027,
-      reward: "630000000000",
-      afterYear: 2037,
-      reward_2: "630000000000",
-    },
-    {
-      year: 2028,
-      reward: "630000000000",
-      afterYear: 2038,
-      reward_2: "630000000000",
-    },
-    {
-      year: 2029,
-      reward: "630000000000",
-      afterYear: 2039,
-      reward_2: "630000000000",
-    },
-    {
-      year: 2030,
-      reward: "630000000000",
-      afterYear: 2040,
-      reward_2: "630000000000",
-    },
-    {
-      year: 2031,
-      reward: "630000000000",
-      afterYear: 2041,
-      reward_2: "630000000000",
-    },
-    {
-      year: 2032,
-      reward: "630000000000",
-      afterYear: 2042,
-      reward_2: "630000000000",
-    },
-    {
-      year: 2033,
-      reward: "630000000000",
-      afterYear: 2043,
-      reward_2: "630000000000",
-    },
-  ];
+  // const staking_1 = [
+  //   {
+  //     year: 2024,
+  //     reward: "630000000000",
+  //     afterYear: 2034,
+  //     reward_2: "630000000000",
+  //   },
+  //   {
+  //     year: 2025,
+  //     reward: "630000000000",
+  //     afterYear: 2035,
+  //     reward_2: "630000000000",
+  //   },
+  //   {
+  //     year: 2026,
+  //     reward: "630000000000",
+  //     afterYear: 2036,
+  //     reward_2: "630000000000",
+  //   },
+  //   {
+  //     year: 2027,
+  //     reward: "630000000000",
+  //     afterYear: 2037,
+  //     reward_2: "630000000000",
+  //   },
+  //   {
+  //     year: 2028,
+  //     reward: "630000000000",
+  //     afterYear: 2038,
+  //     reward_2: "630000000000",
+  //   },
+  //   {
+  //     year: 2029,
+  //     reward: "630000000000",
+  //     afterYear: 2039,
+  //     reward_2: "630000000000",
+  //   },
+  //   {
+  //     year: 2030,
+  //     reward: "630000000000",
+  //     afterYear: 2040,
+  //     reward_2: "630000000000",
+  //   },
+  //   {
+  //     year: 2031,
+  //     reward: "630000000000",
+  //     afterYear: 2041,
+  //     reward_2: "630000000000",
+  //   },
+  //   {
+  //     year: 2032,
+  //     reward: "630000000000",
+  //     afterYear: 2042,
+  //     reward_2: "630000000000",
+  //   },
+  //   {
+  //     year: 2033,
+  //     reward: "630000000000",
+  //     afterYear: 2043,
+  //     reward_2: "630000000000",
+  //   },
+  // ];
 
   const data = {
     labels: [
@@ -147,28 +147,18 @@ export default function ThirdSection() {
   };
 
   return (
-    <div className="max-w-7xl -mt-20 mx-auto font-baiJamjuree">
+    <div className="max-w-7xl -mt-24 mx-auto font-baiJamjuree">
       <div>
         <div className="flex flex-col gap-y-4">
           <div className="flex  justify-center ">
             <img w-full src={nanoBridge} alt="" />
           </div>
           <div className="w-[80%] mx-auto">
-            <h1 className="text-center font-semibold text-[#fd9623] text-lg sm:text-4xl md:text-5xl lg:text-6xl">
-              BRIDGING BTC/ WBTC <span className="text-[#333333]">BETWEEN</span>{" "}
-              BITCOINNANO, BITCOIN <span className="text-[#333333]"> AND</span>{" "}
-              EVMS
+            <h1 className="text-center font-semibold text-[#333333] text-lg sm:text-4xl md:text-5xl lg:text-6xl">
+              BITCOINNANO TOKENOMIC
             </h1>
           </div>
-          <div className="w-[90%]  md:w-[90%] lg:w-[45%] mx-auto">
-            <p className="text-[#727272] text-center text-xs sm:text-md ">
-              Bitcoin-nano is a dApp layer for Bitcoin, not only fostering
-              inter-application communication but also enabling seamless
-              cross-chain interaction. Users can effortlessly transfer BTC
-              (Bitcoin network) and WBTC (EVM networks) to Bitcoin-nano and vice
-              versa, unlocking vast DeFi opportunities.{" "}
-            </p>
-          </div>
+
           <div className="flex justify-center "></div>
         </div>
       </div>
@@ -176,8 +166,7 @@ export default function ThirdSection() {
       {/* Table data
        */}
       <div className="flex  items-center justify-center sm:flex-row flex-col">
-        <div className="py-8 px-4 flex flex-col  w-full  justify-center">
-          <h1 className="font-bold text-center text-lg">Tokenomic</h1>
+        <div className="py-4 px-4 flex flex-col  w-full  justify-center">
           <Table className="border">
             <TableHeader>
               <TableRow className="bg-[#fea72b] hover:bg-[#fea72b]  text-white">
@@ -205,56 +194,55 @@ export default function ThirdSection() {
           </div>
         </div>
       </div>
-
-      <div className="flex  items-center sm:flex-row flex-col py-8">
-        <div className="w-full flex flex-col items-center justify-end gap-y-5 self-center p-4 text-lg sm:text-2xl">
-          <p className=" font-semibold italic text-[#fea72b]">
-            Link Dapp to{" "}
-            <span className=" text-[#333333]">Staking program</span>
-          </p>
-          <p className=" font-semibold italic text-[#fea72b]">
-            <span className=" text-[#333333]">Stake BTC to</span> earn NanoCoin
-          </p>
-          <p className=" font-semibold italic text-[#fea72b]">
-            Stake sGol to <span className=" text-[#333333]">earn NanoCoin</span>
-          </p>
-          <p className=" font-semibold italic text-[#fea72b]">
-            <span className=" text-[#333333]">Stake BNB</span> to earn NanoCoin
-          </p>
-        </div>
-
-        {/* staking Program table */}
-        <div className="py-8 px-4 flex flex-col  w-full  justify-center">
-          <h1 className="font-bold text-center text-lg">
-            Staking to Earn 20 years program{" "}
-          </h1>
-
-          <Table className="border ">
-            <TableHeader>
-              <TableRow className="bg-[#fea72b] hover:bg-[#fea72b] text-white">
-                <TableHead className="font-bold">Year</TableHead>
-                <TableHead className="font-bold">Reward/Year</TableHead>
-                <TableHead className="font-bold">Year</TableHead>
-                <TableHead className="font-bold">Reward/Year</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {staking_1.map((invoice) => (
-                <TableRow key={invoice.year}>
-                  <TableCell className="font-medium h-2 ">
-                    {invoice.year}
-                  </TableCell>
-                  <TableCell className="">{invoice.reward}</TableCell>
-                  <TableCell className="">{invoice.afterYear}</TableCell>
-                  <TableCell className="">{invoice.reward_2}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
-      </div>
-
       <div></div>
     </div>
   );
 }
+
+//  <div className="flex  items-center sm:flex-row flex-col py-8">
+//         <div className="w-full flex flex-col items-center justify-end gap-y-5 self-center p-4 text-lg sm:text-2xl">
+//           <p className=" font-semibold italic text-[#fea72b]">
+//             Link Dapp to{" "}
+//             <span className=" text-[#333333]">Staking program</span>
+//           </p>
+//           <p className=" font-semibold italic text-[#fea72b]">
+//             <span className=" text-[#333333]">Stake BTC to</span> earn NanoCoin
+//           </p>
+//           <p className=" font-semibold italic text-[#fea72b]">
+//             Stake sGol to <span className=" text-[#333333]">earn NanoCoin</span>
+//           </p>
+//           <p className=" font-semibold italic text-[#fea72b]">
+//             <span className=" text-[#333333]">Stake BNB</span> to earn NanoCoin
+//           </p>
+//         </div>
+
+//         {/* staking Program table */}
+//         <div className="py-8 px-4 flex flex-col  w-full  justify-center">
+//           <h1 className="font-bold text-center text-lg">
+//             Staking to Earn 20 years program{" "}
+//           </h1>
+
+//           <Table className="border ">
+//             <TableHeader>
+//               <TableRow className="bg-[#fea72b] hover:bg-[#fea72b] text-white">
+//                 <TableHead className="font-bold">Year</TableHead>
+//                 <TableHead className="font-bold">Reward/Year</TableHead>
+//                 <TableHead className="font-bold">Year</TableHead>
+//                 <TableHead className="font-bold">Reward/Year</TableHead>
+//               </TableRow>
+//             </TableHeader>
+//             <TableBody>
+//               {staking_1.map((invoice) => (
+//                 <TableRow key={invoice.year}>
+//                   <TableCell className="font-medium h-2 ">
+//                     {invoice.year}
+//                   </TableCell>
+//                   <TableCell className="">{invoice.reward}</TableCell>
+//                   <TableCell className="">{invoice.afterYear}</TableCell>
+//                   <TableCell className="">{invoice.reward_2}</TableCell>
+//                 </TableRow>
+//               ))}
+//             </TableBody>
+//           </Table>
+//         </div>
+//       </div>

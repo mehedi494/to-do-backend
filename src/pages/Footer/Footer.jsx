@@ -3,14 +3,13 @@ import { FaRegCopyright } from "react-icons/fa";
 import footerLogo from "../../assets/logoBitcoinnano.png";
 
 import FooterButton from "./FooterButton.jsx";
-import NewsLetter from "./NewsLetter.jsx";
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <div>
-      <div className="w-full flex  gap-x-4 sm:flex-row sm:gap-0  mt-[150px]   items-end bg-[#454545] min-h-80">
+      <div className="w-full flex  gap-x-4 sm:flex-row sm:gap-0  mt-[150px]   items-end bg-[#454545] min-h-32">
         <div className=" sm:flex justify-between  items-center w-full px-12  py-8">
           <div className=" flex flex-col gap-2">
             {/*  <img
@@ -35,7 +34,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <NewsLetter></NewsLetter>
+      {/* <NewsLetter></NewsLetter> */}
     </div>
   );
 }
