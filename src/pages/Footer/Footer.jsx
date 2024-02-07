@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <div>
-      <div className="w-full flex  gap-x-4 sm:flex-row sm:gap-0  mt-[150px]   items-end bg-[#454545] min-h-32">
+      <div className="w-full flex  gap-x-4 sm:flex-row sm:gap-0     items-end bg-[#454545] min-h-32">
         <div className=" sm:flex justify-between  items-center w-full px-12  py-8">
           <div className=" flex flex-col gap-2">
             {/*  <img

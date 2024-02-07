@@ -19,31 +19,44 @@ export default function ThirdSection() {
     },
     {
       property: "Ticker",
-      value: "NanoCoin",
+      value: "NAN0",
     },
     {
-      property: "Blockchian",
-      value: "Bitcoin Layer 2 (Gelios Blockchain) ",
+      property: "Inscription ID",
+      value: "3835fb2d3086d3e8c8a0e153ee7c61e619b592a504f86fe59c7240910760664di0",
     },
     {
-      property: "Total Supply",
+      property: "PROTOCOL/Blockchian",
+      value: "BRC20 (BITCOIN Blockchain)",
+    },
+    {
+      property: "BRC20 (BITCOIN Blockchain) ",
       value: "21,000,000,000,000,000 (100%)",
     },
     {
       property: "Stake to Earn (Vesting 20years)",
       value: "12,600,000,000,000,000 (60%)",
+      value_2: "bc1qdlq94wcg7v40ewxxdsj6v6p6ye5dhsvcva8wdf (Staking Wallet)",
     },
     {
-      property: "Add Liquidity (Burnt)",
+      property: "Available for Trade",
       value: "4,200,000,000,000,000  (20%)",
+      value_2: "bc1qs244vrcg9wxgj08jxwgujmye7m2hv8cryu3uv6 (Deployer Wallet)",
     },
     {
       property: "CEX Listing (Lock 3m)",
       value: "2,100,000,000,000,000  (10%)",
+      value_2: "bc1qhmlh85k82qy793nwnq5v8ytj9esh6vxt9xynxy (CEX Listing Wallet)",
     },
     {
-      property: "Marketing (Vesting 10m) ",
+      property: "Marketing (Vesting 10m)",
       value: "2,100,000,000,000,000  (10%)",
+      value_2: "bc1qs60dtamtp7fny37mzce5898yyajptdhyl9akwz (Marketing Wallet)",
+    },
+    {
+      property: "MarketPlace",
+      value: "Unisat, Binance Web3 Wallet, OKX Wallet……",
+      
     },
   ];
 
@@ -110,28 +123,28 @@ export default function ThirdSection() {
   //   },
   // ];
 
-  const data = {
+  const tableData = {
     labels: [
-      "Total Supply(100%)",
-      "Stake to Earn(60%)",
-      "Add Liquidity(20%)",
-      "CEX Listing(10%)",
-      "Marketing(10%)",
+      "BRC20 (BITCOIN Blockchain (100%)",
+      "Stake to Earn (Vesting 20years)(60%)",
+      "Available for Trade(20%)",
+      "CEX Listing (Lock 3m)(10%)",
+      "Marketing (Vesting 10m)(10%)",
     ],
     datasets: [
       {
         // label: '# of Votes',
         data: [
-          21000000000000000, 12600000000000000, 4200000000000000,
+          21000000000000000, 12600000000000000, 4200000000000000 ,
           2100000000000000, 2100000000000000,
         ],
         backgroundColor: [
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(255, 159, 64, 0.2)",
+          "rgba(255, 206, 86, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(75, 192, 192, 1)",
         ],
         borderColor: [
           "rgba(255, 99, 132, 1)",
@@ -147,7 +160,7 @@ export default function ThirdSection() {
   };
 
   return (
-    <div className="max-w-7xl -mt-24 mx-auto font-baiJamjuree">
+    <div className="max-w-7xl mt-10 sm:-mt-24 mx-auto font-baiJamjuree">
       <div>
         <div className="flex flex-col gap-y-4">
           <div className="flex  justify-center ">
@@ -165,22 +178,27 @@ export default function ThirdSection() {
 
       {/* Table data
        */}
-      <div className="flex  items-center justify-center sm:flex-row flex-col">
-        <div className="py-4 px-4 flex flex-col  w-full  justify-center">
-          <Table className="border">
+      <div className="flex w-full  items-center justify-center sm:flex-row flex-col">
+        <div className="w-full py-4 px-4 flex flex-col  sm:w-1/2  justify-center">
+          <Table className=" border-2">
             <TableHeader>
               <TableRow className="bg-[#fea72b] hover:bg-[#fea72b]  text-white">
-                <TableHead className="font-bold">Properties</TableHead>
+                <TableHead className="font-bold" >Properties</TableHead>
                 <TableHead className="font-bold">Value</TableHead>
+              
               </TableRow>
             </TableHeader>
             <TableBody>
               {invoices.map((invoice) => (
-                <TableRow key={invoice.property}>
-                  <TableCell className="font-medium w-[200px]">
+                <TableRow className=""key={invoice.property}>
+                  <TableCell  className=" text-right font-medium w-[100px]">
                     {invoice.property}
                   </TableCell>
-                  <TableCell className="w-[200px]">{invoice.value}</TableCell>
+                  {
+                    invoice.value_2?<TableCell  className="">{invoice.value} <br/> 
+                    {invoice.value_2}</TableCell>:<TableCell  className="">{invoice.value}</TableCell>
+                  }
+                  {/* <TableCell className="w-[80px]">{invoice.value_2}</TableCell> */}
                 </TableRow>
               ))}
             </TableBody>
@@ -188,9 +206,9 @@ export default function ThirdSection() {
         </div>
 
         {/* Pie Chart */}
-        <div className=" sm:w-[100%] flex justify-center ">
-          <div className="w-full sm:w-1/2 ">
-            <DoughNutPieChart data={data}></DoughNutPieChart>
+        <div className="w-full ">
+          <div className="w-full mx-auto lg:w-2/3 justify-items-center items-center flex justify-center  ">
+            <DoughNutPieChart data={tableData}></DoughNutPieChart>
           </div>
         </div>
       </div>
