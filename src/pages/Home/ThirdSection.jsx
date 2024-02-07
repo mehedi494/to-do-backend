@@ -126,17 +126,17 @@ export default function ThirdSection() {
 
   const tableData = {
     labels: [
-      "BRC20 (BITCOIN Blockchain (100%)",
-      "Stake to Earn (Vesting 20years)(60%)",
-      "Available for Trade(20%)",
-      "CEX Listing (Lock 3m)(10%)",
-      "Marketing (Vesting 10m)(10%)",
+      "60% Staking program",
+      "20% Available for Trade",
+      "10% CEX Listing",
+      "10% Marketing & Partnership",
+     
     ],
     datasets: [
       {
         // label: '# of Votes',
         data: [
-          21000000000000000, 12600000000000000, 4200000000000000,
+          12600000000000000, 4200000000000000,
           2100000000000000, 2100000000000000,
         ],
         backgroundColor: [
@@ -165,7 +165,7 @@ export default function ThirdSection() {
       <div>
         <div className="flex flex-col ">
           <div className="flex  justify-center ">
-            <img className="w-full mt-10"  src={nanoBridge} alt="" />
+            <img className=" mt-10"  src={nanoBridge} alt="" />
           </div>
           <div className="w-[80%] mx-auto">
             <h1 className="text-center font-semibold text-[#333333] text-lg sm:text-4xl md:text-5xl lg:text-6xl">

@@ -10,7 +10,7 @@ const SecondSection = () => {
         <div className=" border-0 shadow-none sm:border sm:shadow-sm p-4 rounded-md flex flex-col items-center gap-x-4  ">
           <div className="w-full h-20 flex justify-center flex-col items-center">
             <img className="w-20" src={vision} alt="" />
-            <p className="text-[#3e3e3e]">Vision</p>
+            <p className="text-[#3e3e3e] text-2xl">Vision</p>
           </div>
           <h1 className="font-poppins font-normal text-center  text-[#ff9000] pt-2 text-xl sm:text-xl md:text-2xl lg:text-3xl  ">
             To make your life changing financial freedom!
@@ -20,7 +20,7 @@ const SecondSection = () => {
         <div className="border-0 shadow-none sm:border sm:shadow-sm p-4 rounded-md flex flex-col gap-x-4 items-center justify-center ">
           <div className="w-full h-20 flex justify-center flex-col items-center">
             <img className="w-20" src={mission} alt="" />
-            <p className="text-[#3e3e3e]">Mission</p>
+            <p className="text-[#3e3e3e] text-2xl">Mission</p>
           </div>
 
           <h1 className="font-poppins font-semibol   text-[#ff9000] text-xl sm:text-xl pt-2 md:text-2xl lg:text-3xl text-center  ">
