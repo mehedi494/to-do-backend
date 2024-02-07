@@ -5,8 +5,7 @@ import btcLogo from "../../assets/btc.png";
 import introBg from "../../assets/intro_bg.png";
 import boxImg from "../../assets/nanoBox.svg";
 import nanoCoinLogo from "../../assets/nanoCoin.png";
-
-import partnerLogo_2 from "../../assets/partners_logo/crop/GeniiData_crop-removebg-preview.png";
+import partnerLogo_2 from "../../assets/partners_logo/crop/GenniDataWithText.png";
 import partnerLogo_1 from "../../assets/partners_logo/crop/binanance_crop-removebg-preview.png";
 import partnerLogo_3 from "../../assets/partners_logo/crop/bybit_crop-removebg-preview.png";
 import partnerLogo_4 from "../../assets/partners_logo/crop/coingecko_crop-removebg-preview.png";
@@ -20,7 +19,6 @@ export default function FirstIntroSection() {
     partnerLogo_1,
     partnerLogo_2,
     partnerLogo_8,
-
     partnerLogo_6,
     partnerLogo_7,
     partnerLogo_5,
@@ -32,7 +30,6 @@ export default function FirstIntroSection() {
       className="bg-cover bg-center bg-no-repeat mt-16 "
       style={{ backgroundImage: `url(${introBg})` }}>
       {/* first  */}
-      {/* className="flex flex-wrap flex-col-reverse md:flex-row lg:flex-row justify-center items-center p-4 max-w-7xl  font-baiJamjuree */}
       <div className="flex flex-wrap flex-col-reverse md:flex-row lg:flex-row min-h-[450px] items-center mx-auto  max-w-7xl  font-baiJamjuree relative   ">
         <div className="w-full  md:w-1/2 lg:w-1/2  flex flex-col-reverse gap-y-6 my-4  ">
           <div className="px-4 py-0  sm:py-8">
