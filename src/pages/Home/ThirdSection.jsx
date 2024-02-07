@@ -1,7 +1,7 @@
 import React from "react";
 
 import nanoBridge from "../../assets/nanoBridge.png";
-import DoughNutPieChart from "../../components/ui/PieChart.jsx";
+import AmChartsPieChart from "../../components/ui/AmChartsPieChart.jsx";
 import {
   Table,
   TableBody,
@@ -124,7 +124,7 @@ export default function ThirdSection() {
   //   },
   // ];
 
-  const tableData = {
+  /*  const tableData = {
     labels: [
       "60% Staking program",
       "20% Available for Trade",
@@ -158,14 +158,14 @@ export default function ThirdSection() {
         borderWidth: 1,
       },
     ],
-  };
+  }; */
 
   return (
     <div className="max-w-7xl mt-10 sm:-mt-24 mx-auto font-baiJamjuree">
       <div>
         <div className="flex flex-col ">
           <div className="flex  justify-center ">
-            <img className=" mt-10"  src={nanoBridge} alt="" />
+            <img className=" mt-10" src={nanoBridge} alt="" />
           </div>
           <div className="w-[80%] mx-auto">
             <h1 className="text-center font-semibold text-[#333333] text-lg sm:text-4xl md:text-5xl lg:text-6xl">
@@ -179,7 +179,7 @@ export default function ThirdSection() {
 
       {/* Table data
        */}
-      <div className="flex w-full  items-center justify-center sm:flex-row flex-col">
+      <div className="flex  w-full  items-center justify-center sm:flex-row flex-col">
         <div className="w-full py-4 px-4 flex flex-col   justify-center">
           <Table className=" border-2 border-[#fea72b]">
             <TableHeader>
@@ -194,7 +194,7 @@ export default function ThirdSection() {
                   <TableCell className="text-right font-medium w-[200px]">
                     {invoice.property}
                   </TableCell>
-                 
+
                   {invoice.value_2 ? (
                     <TableCell className="w-[100px]">
                       {invoice.value} <br />
@@ -211,9 +211,7 @@ export default function ThirdSection() {
 
         {/* Pie Chart */}
         <div className="w-full ">
-          <div className="w-full mx-auto lg:w-2/3 justify-items-center items-center flex justify-center  ">
-            <DoughNutPieChart data={tableData}></DoughNutPieChart>
-          </div>
+          <AmChartsPieChart></AmChartsPieChart>
         </div>
       </div>
       <div></div>
