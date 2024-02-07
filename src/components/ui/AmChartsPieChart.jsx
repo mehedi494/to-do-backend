@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-
 import * as am4charts from "@amcharts/amcharts4/charts";
 import * as am4core from "@amcharts/amcharts4/core";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
@@ -14,16 +13,6 @@ const AmChartsPieChart = () => {
     chart.hiddenState.properties.opacity = 0; // This creates initial fade-in
     chart.legend = new am4charts.Legend();
 
-
-
-   /*  "60% Staking program",
-      "20% Available for Trade",
-      "10% CEX Listing",
-      "10% Marketing & Partnership", */
-
-      
-      /* 12600000000000000, 4200000000000000,
-          2100000000000000, 2100000000000000, */
     // Add data
     chart.data = [
       {
@@ -42,13 +31,20 @@ const AmChartsPieChart = () => {
         country: "Marketing & Partnership",
         litres: 2100000000000000
       },
-      
     ];
 
     // Create series
     let series = chart.series.push(new am4charts.PieSeries3D());
     series.dataFields.value = "litres";
     series.dataFields.category = "country";
+
+    // Change colors
+    series.colors.list = [
+      am4core.color("#fea72b"),
+      am4core.color("#464682"),
+      am4core.color("#717140"),
+      am4core.color("#3f3f3f")
+    ];
 
     // Cleanup function
     return () => {
@@ -57,7 +53,7 @@ const AmChartsPieChart = () => {
   }, []); // Empty dependency array to ensure effect runs only once
 
   return (
-    <div id="chartdiv" style={{ width: "100%", height: "300px" ,}}></div>
+    <div id="chartdiv" style={{ width: "100%", height: "300px" }}></div>
   );
 };
 
