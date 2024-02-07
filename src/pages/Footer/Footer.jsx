@@ -23,7 +23,7 @@ export default function Footer() {
               className="text-white font-bold text-xl w-[200px]  min-w-32 "
               alt="logo"
               src={footerLogo}></img>
-            <p className="flex items-center text-white gap-x-1 font-poppins text-sm ">
+            <p className="flex items-center text-white gap-x-1  text-sm ">
               <FaRegCopyright />
               {year} Bitcoinnano. All Rights Reserved
             </p>

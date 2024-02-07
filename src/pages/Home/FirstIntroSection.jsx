@@ -44,8 +44,8 @@ export default function FirstIntroSection() {
               online & real world asset payment! 100% SAFU! OG Team! Strong
               Community! Don't miss your life changing opportunity....!
             </p>
-            <p className="py-4 text-xl sm:text-2xl lg:text-4xl  font-medium text-[#fc7411]  italic">
-              <i className=""> 1,000,000,000 Nano </i>
+            <p className="py-4 text-xl sm:text-2xl lg:text-4xl  font-medium text-[#fc7411]  ">
+              1,000,000,000 Nano 
               <img
                 className="w-[34px] inline"
                 src={nanoCoinLogo}
