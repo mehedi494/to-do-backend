@@ -11,33 +11,35 @@ const AmChartsPieChart = () => {
     // Create chart instance
     let chart = am4core.create("chartdiv", am4charts.PieChart3D);
     chart.hiddenState.properties.opacity = 0; // This creates initial fade-in
+    
     chart.legend = new am4charts.Legend();
-
+// Change rotation
+// chart.properties=0
     // Add data
     chart.data = [
       {
         country: "Staking program",
-        litres: 12600000000000000
+        litres: 12600000000000
       },
       {
         country: "Available for Trade",
-        litres: 4200000000000000
+        litres: 4200000000000
       },
       {
         country: "CEX Listing",
-        litres: 2100000000000000
+        litres: 2100000000000
       },
       {
         country: "Marketing & Partnership",
-        litres: 2100000000000000
+        litres: 2100000000000
       },
     ];
-
+    am4core.options.licenses = "asdfghjqwert";
     // Create series
     let series = chart.series.push(new am4charts.PieSeries3D());
     series.dataFields.value = "litres";
     series.dataFields.category = "country";
-
+    series.labels.template.fontSize = 10;
     // Change colors
     series.colors.list = [
       am4core.color("#fea72b"),

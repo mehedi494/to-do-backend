@@ -27,9 +27,9 @@ export default function SeventhSection() {
   ];
   return (
     <div>
-      <div className="max-w-7xl mx-auto  font-baiJamjuree">
+      <div className="max-w-7xl mx-auto py-8  font-baiJamjuree">
         <div className="w-full sm:w-[90%] text-center mx-auto flex  justify-center flex-wrap gap-y-5 ">
-          <h1 className="text-xl sm:text-5xl font-semibold text-[#333333]">
+          <h1 className="text-xl sm:text-5xl py-2 font-semibold text-[#333333]">
             Explore Bitcoinnano Ecosystem
           </h1>
         </div>

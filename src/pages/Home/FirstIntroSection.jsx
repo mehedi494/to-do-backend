@@ -41,8 +41,11 @@ export default function FirstIntroSection() {
               BitcoinNano (NAN0) is a unit of Bitcoin <img className="w-5 inline " src={btcLogo} alt="btc-logo" /> {""}, it's a biggest & first
               meme coin with utilities for Bitcoin Ecosystem <img className="w-5 inline " src={btcLogo} alt="btc-logo" /> {' '}. In the future,
               it will be used for the global payment system such as in-store,
-              online & real world asset payment! 100% SAFU! OG Team! Strong
-              Community! Don't miss your life changing opportunity....!
+              online & real world asset payment!
+             
+              <p className="pt-2"> 100% SAFU! OG Team! Strong
+              Community!</p> 
+              <p>Don't miss your life changing opportunity....!</p>
             </p>
             <p className="py-4 text-xl sm:text-2xl lg:text-4xl  font-medium text-[#fc7411]  ">
               1,000,000,000 Nano 

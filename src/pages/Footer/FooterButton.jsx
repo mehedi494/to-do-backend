@@ -1,6 +1,6 @@
 import React from "react";
 import { BsTwitterX } from "react-icons/bs";
-import { FaDiscord, FaTelegramPlane, FaYoutube } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -16,9 +16,9 @@ const FooterButton = () => {
       icon: <BsTwitterX />,
       path: "https://twitter.com/Smallbitcoin",
     },
-    { title: "discord", icon: <FaDiscord />, path: "/#" },
+    /* { title: "discord", icon: <FaDiscord />, path: "/#" },
 
-    { title: "youtube", icon: <FaYoutube />, path: "/#" },
+    { title: "youtube", icon: <FaYoutube />, path: "/#" }, */
     { title: "medium", icon: <FaMedium />, path: "/#" },
   ];
   return (

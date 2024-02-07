@@ -31,28 +31,28 @@ export default function ThirdSection() {
       value: "BRC20 (BITCOIN Blockchain)",
     },
     {
-      property: "BRC20 (BITCOIN Blockchain) ",
-      value: "21,000,000,000,000,000 (100%)",
+      property: "Total Supply",
+      value: "21,000,000,000,000 (100%)",
     },
     {
       property: "Stake to Earn (Vesting 20years)",
-      value: "12,600,000,000,000,000 (60%)",
+      value: "12,600,000,000,000 (60%)",
       value_2: "bc1qdlq94wcg7v40ewxxdsj6v6p6ye5dhsvcva8wdf (Staking Wallet)",
     },
     {
       property: "Available for Trade",
-      value: "4,200,000,000,000,000  (20%)",
+      value: "4,200,000,000,000  (20%)",
       value_2: "bc1qs244vrcg9wxgj08jxwgujmye7m2hv8cryu3uv6 (Deployer Wallet)",
     },
     {
       property: "CEX Listing (Lock 3m)",
-      value: "2,100,000,000,000,000  (10%)",
+      value: "2,100,000,000,000  (10%)",
       value_2:
         "bc1qhmlh85k82qy793nwnq5v8ytj9esh6vxt9xynxy (CEX Listing Wallet)",
     },
     {
       property: "Marketing (Vesting 10m)",
-      value: "2,100,000,000,000,000  (10%)",
+      value: "2,100,000,000,000  (10%)",
       value_2: "bc1qs60dtamtp7fny37mzce5898yyajptdhyl9akwz (Marketing Wallet)",
     },
     {
@@ -136,8 +136,8 @@ export default function ThirdSection() {
       {
         // label: '# of Votes',
         data: [
-          12600000000000000, 4200000000000000,
-          2100000000000000, 2100000000000000,
+          12600000000000, 4200000000000,
+          2100000000000, 2100000000000,
         ],
         backgroundColor: [
           "rgba(255, 206, 86, 1)",

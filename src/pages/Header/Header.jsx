@@ -15,10 +15,9 @@ import SearchSmallDevice from "./SearchSmallDevice";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isInputOpen, setInputOpen] = useState(false);
-  
 
   const toggleSearch = () => {
-     // console.log("sdfjlk");
+    // console.log("sdfjlk");
     setInputOpen(!isInputOpen);
   };
   // console.log(isInputOpen);
@@ -43,6 +42,19 @@ export default function Header() {
       menuText: "Docs",
       path: "/#",
     }, */
+
+    {
+      menuText: "Vision",
+      path: "/",
+    },
+    {
+      menuText: "Mission",
+      path: "/",
+    },
+    {
+      menuText: "Ecosystem",
+      path: "/",
+    },
     {
       menuText: "Community",
       path: "/",
@@ -63,10 +75,7 @@ export default function Header() {
         { subMenuText: "Medium", path: "/#", preIcon: <FaMedium /> },
       ],
     },
-    {
-      menuText: "Ecosystem",
-      path: "/",
-    },
+
     /* {
       menuText: "Docs",
       path: "/",
@@ -75,7 +84,6 @@ export default function Header() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
- 
 
   return (
     <div className="bg-[#3e3e3e]  z-20 w-full top-0 right-0  fixed ">
@@ -97,69 +105,88 @@ export default function Header() {
               <CiSearch />
             </form>
           </div>
-        <div className="">
-        <ul className="flex  text-xl text-white    gap-x-4 items-center">
-            <Link to="/">
-              <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
-                Home
-              </li>
-            </Link>
+          <div className="">
+            <ul className="flex  text-xl text-white    gap-x-4 items-center">
+              <Link to="/">
+                <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
+                  Home
+                </li>
+              </Link>
+              <Link to="/">
+                <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
+                  Vision
+                </li>
+              </Link>
+              <Link to="/">
+                <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
+                  Mission
+                </li>
+              </Link>
+              <Link to="/#">
+                <li className="hidden md:hidden lg:hidden xl:inline  sm:hidden hover:text-[#fc690b] transition duration-200">
+                  Ecosystem
+                </li>
+              </Link>
 
-           
-
-            <NestedMenu
-              menuText="Community"
-              subMenu={[
-                { subMenuText: "Discord", path: "/#", preIcon: <FaDiscord /> },
-                {
-                  subMenuText: "Twitter",
-                  path: "https://twitter.com/Smallbitcoin",
-                  preIcon: <BsTwitterX />,
-                },
-                {
-                  subMenuText: "Telegram",
-                  path: "https://t.me/bitcoinnanoworld",
-                  preIcon: <FaTelegramPlane />,
-                },
-                { subMenuText: "Youtube", path: "/#", preIcon: <FaYoutube /> },
-                { subMenuText: "Medium", path: "/#", preIcon: <FaMedium /> },
-              ]}
-              icon={<FaAngleDown className="inline" />}
-              link="/"></NestedMenu>
-            <Link to="/#">
-              <li className="hidden md:hidden lg:hidden xl:inline  sm:hidden hover:text-[#fc690b] transition duration-200">
-                Ecosystem
-              </li>
-            </Link>
-            <Link to="/#">
+              <NestedMenu
+                menuText="Community"
+                subMenu={[
+                  {
+                    subMenuText: "Discord",
+                    path: "/#",
+                    preIcon: <FaDiscord />,
+                  },
+                  {
+                    subMenuText: "Twitter",
+                    path: "https://twitter.com/Smallbitcoin",
+                    preIcon: <BsTwitterX />,
+                  },
+                  {
+                    subMenuText: "Telegram",
+                    path: "https://t.me/bitcoinnanoworld",
+                    preIcon: <FaTelegramPlane />,
+                  },
+                  {
+                    subMenuText: "Youtube",
+                    path: "/#",
+                    preIcon: <FaYoutube />,
+                  },
+                  { subMenuText: "Medium", path: "/#", preIcon: <FaMedium /> },
+                ]}
+                icon={<FaAngleDown className="inline" />}
+                link="/"></NestedMenu>
+              
              
-            </Link>
-            <Link to="/#" className="">
-              <button className="group hidden sm:hiiden md:inline sm:p-2 h-[60px] bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl w-[200px] font-bold transition-transform transform border border-[#3e3e3e]  hover:border hover:border-white group-hover:transition group-hover:duration-700 ">
-                Buy NANO
-                <FaArrowRightLong className="inline ml-2 group-hover:translate-x-1 group-hover:transition-transform transform " />
-              </button>
-            </Link>
+              <Link to="/#" className="">
+                <button className="group hidden sm:hiiden md:inline sm:p-2 h-[60px] bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl w-[200px] font-bold transition-transform transform border border-[#3e3e3e]  hover:border hover:border-white group-hover:transition group-hover:duration-700 ">
+                  Buy NANO
+                  <FaArrowRightLong className="inline ml-2 group-hover:translate-x-1 group-hover:transition-transform transform " />
+                </button>
+              </Link>
 
-            {/* ********** */}
-            
-            <button onClick={toggleSearch} className="text-[#feab2d] sm:inline md:hidden lg:hidden xl:hidden inline">
-              <CiSearch />
-            </button>
-            {/* ******** */}
-            <button
-              onClick={toggleMenu}
-              className="text-[#feab2d]  sm:inline md:inline lg:inline xl:hidden  ">
-              {!isOpen ? <RxHamburgerMenu /> : <IoMdClose />}
-            </button>
-          </ul>
-        </div>
+              {/* ********** */}
+
+              <button
+                onClick={toggleSearch}
+                className="text-[#feab2d] sm:inline md:hidden lg:hidden xl:hidden inline">
+                <CiSearch />
+              </button>
+              {/* ******** */}
+              <button
+                onClick={toggleMenu}
+                className="text-[#feab2d]  sm:inline md:inline lg:inline xl:hidden  ">
+                {!isOpen ? <RxHamburgerMenu /> : <IoMdClose />}
+              </button>
+            </ul>
+          </div>
         </div>
         <HamBurger isOpen={isOpen} menus={smallDeviceMenu}></HamBurger>
       </header>
-      {isInputOpen&&
-        <SearchSmallDevice isInputOpen={isInputOpen} setInputOpen={setInputOpen}></SearchSmallDevice>
-      }
+      {isInputOpen && (
+        <SearchSmallDevice
+          isInputOpen={isInputOpen}
+          setInputOpen={setInputOpen}></SearchSmallDevice>
+      )}
     </div>
   );
 }
