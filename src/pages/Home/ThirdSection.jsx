@@ -1,6 +1,6 @@
 import React from "react";
 
-import nanoBridge from "../../assets/nanoBridge.svg";
+import nanoBridge from "../../assets/nanoBridge.png";
 import DoughNutPieChart from "../../components/ui/PieChart.jsx";
 import {
   Table,
@@ -23,7 +23,8 @@ export default function ThirdSection() {
     },
     {
       property: "Inscription ID",
-      value: "3835fb2d3086d3e8c8a0e153ee7c61e619b592a504f86fe59c7240910760664di0",
+      value:
+        "3835fb2d3086d3e8c8a0e153ee7c61e619b592a504f86fe59c7240910760664di0",
     },
     {
       property: "PROTOCOL/Blockchian",
@@ -46,7 +47,8 @@ export default function ThirdSection() {
     {
       property: "CEX Listing (Lock 3m)",
       value: "2,100,000,000,000,000  (10%)",
-      value_2: "bc1qhmlh85k82qy793nwnq5v8ytj9esh6vxt9xynxy (CEX Listing Wallet)",
+      value_2:
+        "bc1qhmlh85k82qy793nwnq5v8ytj9esh6vxt9xynxy (CEX Listing Wallet)",
     },
     {
       property: "Marketing (Vesting 10m)",
@@ -56,7 +58,6 @@ export default function ThirdSection() {
     {
       property: "MarketPlace",
       value: "Unisat, Binance Web3 Wallet, OKX Wallet……",
-      
     },
   ];
 
@@ -135,7 +136,7 @@ export default function ThirdSection() {
       {
         // label: '# of Votes',
         data: [
-          21000000000000000, 12600000000000000, 4200000000000000 ,
+          21000000000000000, 12600000000000000, 4200000000000000,
           2100000000000000, 2100000000000000,
         ],
         backgroundColor: [
@@ -162,9 +163,9 @@ export default function ThirdSection() {
   return (
     <div className="max-w-7xl mt-10 sm:-mt-24 mx-auto font-baiJamjuree">
       <div>
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col ">
           <div className="flex  justify-center ">
-            <img w-full src={nanoBridge} alt="" />
+            <img className="w-full mt-10"  src={nanoBridge} alt="" />
           </div>
           <div className="w-[80%] mx-auto">
             <h1 className="text-center font-semibold text-[#333333] text-lg sm:text-4xl md:text-5xl lg:text-6xl">
@@ -179,26 +180,29 @@ export default function ThirdSection() {
       {/* Table data
        */}
       <div className="flex w-full  items-center justify-center sm:flex-row flex-col">
-        <div className="w-full py-4 px-4 flex flex-col  sm:w-1/2  justify-center">
-          <Table className=" border-2">
+        <div className="w-full py-4 px-4 flex flex-col   justify-center">
+          <Table className=" border-2 border-[#fea72b]">
             <TableHeader>
               <TableRow className="bg-[#fea72b] hover:bg-[#fea72b]  text-white">
-                <TableHead className="font-bold" >Properties</TableHead>
+                <TableHead className="font-bold">Properties</TableHead>
                 <TableHead className="font-bold">Value</TableHead>
-              
               </TableRow>
             </TableHeader>
             <TableBody>
               {invoices.map((invoice) => (
-                <TableRow className=""key={invoice.property}>
-                  <TableCell  className=" text-right font-medium w-[100px]">
+                <TableRow className="" key={invoice.property}>
+                  <TableCell className="text-right font-medium w-[200px]">
                     {invoice.property}
                   </TableCell>
-                  {
-                    invoice.value_2?<TableCell  className="">{invoice.value} <br/> 
-                    {invoice.value_2}</TableCell>:<TableCell  className="">{invoice.value}</TableCell>
-                  }
-                  {/* <TableCell className="w-[80px]">{invoice.value_2}</TableCell> */}
+                 
+                  {invoice.value_2 ? (
+                    <TableCell className="w-[100px]">
+                      {invoice.value} <br />
+                      {invoice.value_2}
+                    </TableCell>
+                  ) : (
+                    <TableCell className="w-[100px]">{invoice.value}</TableCell>
+                  )}
                 </TableRow>
               ))}
             </TableBody>
