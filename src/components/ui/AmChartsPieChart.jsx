@@ -1,20 +1,24 @@
-import React, { useEffect } from 'react';
 import * as am4charts from "@amcharts/amcharts4/charts";
 import * as am4core from "@amcharts/amcharts4/core";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
+import React, { useEffect } from 'react';
 
 const AmChartsPieChart = () => {
   useEffect(() => {
     // Initialize amCharts theme
     am4core.useTheme(am4themes_animated);
+    // Hide amCharts logo and link
+    am4core.options.commercialLicense = false;
+    
 
     // Create chart instance
     let chart = am4core.create("chartdiv", am4charts.PieChart3D);
     chart.hiddenState.properties.opacity = 0; // This creates initial fade-in
-    
+    if(chart.logo){
+      chart.logo.disabled=true;
+    }
     chart.legend = new am4charts.Legend();
-// Change rotation
-// chart.properties=0
+
     // Add data
     chart.data = [
       {
@@ -34,7 +38,7 @@ const AmChartsPieChart = () => {
         litres: 2100000000000
       },
     ];
-    am4core.options.licenses = "asdfghjqwert";
+    
     // Create series
     let series = chart.series.push(new am4charts.PieSeries3D());
     series.dataFields.value = "litres";
