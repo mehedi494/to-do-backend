@@ -14,7 +14,7 @@ const FooterButton = () => {
     {
       title: "twitter",
       icon: <BsTwitterX />,
-      path: "https://twitter.com/Smallbitcoin",
+      path: "https://twitter.com/BITCOINNAN0",
     },
     /* { title: "discord", icon: <FaDiscord />, path: "/#" },
 
