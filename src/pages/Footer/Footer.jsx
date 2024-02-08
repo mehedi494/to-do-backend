@@ -5,7 +5,7 @@ import footerLogo from "../../assets/logoBitcoinnano.png";
 import FooterButton from "./FooterButton.jsx";
 
 export default function Footer() {
-  const year = new Date().getFullYear();
+  // const year = new Date().getFullYear();
 
   return (
     <div>
@@ -25,7 +25,7 @@ export default function Footer() {
               src={footerLogo}></img>
             <p className="flex items-center text-white gap-x-1  text-sm ">
               <FaRegCopyright />
-              {year} Bitcoinnano. All Rights Reserved
+              2024-2043 Bitcoinnano. All Rights Reserved
             </p>
           </div>
 

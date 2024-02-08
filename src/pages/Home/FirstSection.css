@@ -1,0 +1,11 @@
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.animate-rightToLeft {
+  animation: rightToLeft 5s linear infinite; /* Adjust the duration as needed */
+}

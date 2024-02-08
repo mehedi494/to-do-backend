@@ -13,6 +13,7 @@ import partnerLogo_5 from "../../assets/partners_logo/crop/coinranking_crop-remo
 import partnerLogo_6 from "../../assets/partners_logo/crop/okx_crop-removebg-preview.png";
 import partnerLogo_7 from "../../assets/partners_logo/crop/ordinals_crop-removebg-preview.png";
 import partnerLogo_8 from "../../assets/partners_logo/crop/unisat.png";
+import './FirstSection.css';
 
 export default function FirstIntroSection() {
   const partnerLogo = [
@@ -47,7 +48,7 @@ export default function FirstIntroSection() {
               Community!</p> 
               <p>Don't miss your life changing opportunity....!</p>
             </p>
-            <p className="py-4 text-xl sm:text-2xl lg:text-4xl  font-medium text-[#fc7411]  ">
+            <p className="pt-8 text-2xl sm:text-3xl lg:text-5xl  font-medium text-[#fc7411]  ">
               1,000,000,000 Nano 
               <img
                 className="w-[34px] inline"
@@ -97,9 +98,10 @@ export default function FirstIntroSection() {
           className="hidden -z-10  lg:block absolute inset-0 bg-cover bg-center bg-no-repeat "
           style={{ backgroundImage: `url(${intro_pattern})` }}></div> */}
         <div className="  max-w-7xl mx-auto  p-0 sm:pt-8">
-          <div id="vision" className="grid  grid-cols-2 gap-2 md:grid-cols-8 justify-items-center items-center  ">
+          <div id="vision" className="grid  justify-center gap-2 grid-cols-8 gap-x-32 md:gap-2 md:grid-cols-8 justify-items-center place-items-center items-center  overflow-hidden ">
             {partnerLogo.map((logo, index) => (
-              <img key={index} className="w-[100px]   " src={logo} alt="" />
+            <div className="flex item-center justify-center   w-[100px]    animate-rightToLeft">
+               <img key={index} className="w-[100px]   " src={logo} alt="" /></div>
             ))}
           </div>
         </div>
