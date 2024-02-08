@@ -63,25 +63,25 @@ export default function ThirdSection() {
 
 
   return (
-    <div className="max-w-7xl mt-10 sm:-mt-24 mx-auto font-baiJamjuree" >
-      <div>
+    <div className="max-w-7xl mt-10 sm:-mt-24 mx-auto font-baiJamjuree"  >
+      <div >
         <div className="flex flex-col ">
           <div className="flex  justify-center ">
-            <img className=" mt-10" src={nanoBridge} alt="" id="tokenomic" />
+            <img  className=" mt-10" src={nanoBridge} alt=""   />
           </div>
-          <div className="w-[80%] mx-auto" >
+          <div className="w-[80%] mx-auto" id="tokenomic"   >
             <h1 className="text-center font-semibold text-[#333333] text-lg sm:text-4xl md:text-5xl lg:text-6xl">
               BITCOINNANO TOKENOMIC
             </h1>
           </div>
 
-          <div className="flex justify-center "></div>
+          <div className="flex justify-center " ></div>
         </div>
       </div>
 
       {/* Table data
        */}
-      <div className="flex  w-full  items-center justify-center sm:flex-row flex-col">
+      <div className="flex  w-full  items-center justify-center sm:flex-row flex-col" >
         <div className="w-full py-4 px-4 flex flex-col   justify-center">
           <Table className=" border-2 border-[#fea72b]">
             <TableHeader>

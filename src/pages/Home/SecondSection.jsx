@@ -2,10 +2,10 @@ import mission from "../../assets/partners_logo/crop/Mission.png";
 import vision from "../../assets/partners_logo/crop/Vision.png";
 const SecondSection = () => {
   return (
-    <div className="max-w-7xl mt-24 sm:mt-0 py-4 mx-auto ">
+    <div className="max-w-7xl mt-24 sm:mt-0  mx-auto " >
       {/* container  */}
 
-      <div className="" >
+      <div className="py-4 sm:pt-20 sm:py-16" >
       <div className="flex gap-4   flex-col text sm:flex-row justify-center  items-center p-4 max-h-60 ">
         <div className=" border-0 shadow-none sm:border sm:shadow-sm p-4 rounded-md flex flex-col items-center gap-x-4  ">
           <div className="w-full h-20 flex justify-center flex-col items-center">
