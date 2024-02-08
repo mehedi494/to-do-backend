@@ -5,7 +5,7 @@ const SecondSection = () => {
     <div className="max-w-7xl mt-24 sm:mt-0 py-4 mx-auto ">
       {/* container  */}
 
-      <div className="">
+      <div className="" >
       <div className="flex gap-4   flex-col text sm:flex-row justify-center  items-center p-4 max-h-60 ">
         <div className=" border-0 shadow-none sm:border sm:shadow-sm p-4 rounded-md flex flex-col items-center gap-x-4  ">
           <div className="w-full h-20 flex justify-center flex-col items-center">

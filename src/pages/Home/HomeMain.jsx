@@ -1,7 +1,7 @@
 import React from "react";
 import FirstIntroSection from "./FirstIntroSection";
+import FourthSection from "./FourthSection";
 import SecondSection from "./SecondSection";
-import SeventhSection from "./SeventhSection";
 import ThirdSection from "./ThirdSection";
 
 export default function HomeMain() {
@@ -12,7 +12,7 @@ export default function HomeMain() {
     {/* <FourthSection></FourthSection>
     <FifthSection></FifthSection> 
      <SixthSection></SixthSection> */}
-     <SeventhSection></SeventhSection>
+     <FourthSection></FourthSection>
     
   </div>;
 }

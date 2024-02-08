@@ -61,113 +61,15 @@ export default function ThirdSection() {
     },
   ];
 
-  // const staking_1 = [
-  //   {
-  //     year: 2024,
-  //     reward: "630000000000",
-  //     afterYear: 2034,
-  //     reward_2: "630000000000",
-  //   },
-  //   {
-  //     year: 2025,
-  //     reward: "630000000000",
-  //     afterYear: 2035,
-  //     reward_2: "630000000000",
-  //   },
-  //   {
-  //     year: 2026,
-  //     reward: "630000000000",
-  //     afterYear: 2036,
-  //     reward_2: "630000000000",
-  //   },
-  //   {
-  //     year: 2027,
-  //     reward: "630000000000",
-  //     afterYear: 2037,
-  //     reward_2: "630000000000",
-  //   },
-  //   {
-  //     year: 2028,
-  //     reward: "630000000000",
-  //     afterYear: 2038,
-  //     reward_2: "630000000000",
-  //   },
-  //   {
-  //     year: 2029,
-  //     reward: "630000000000",
-  //     afterYear: 2039,
-  //     reward_2: "630000000000",
-  //   },
-  //   {
-  //     year: 2030,
-  //     reward: "630000000000",
-  //     afterYear: 2040,
-  //     reward_2: "630000000000",
-  //   },
-  //   {
-  //     year: 2031,
-  //     reward: "630000000000",
-  //     afterYear: 2041,
-  //     reward_2: "630000000000",
-  //   },
-  //   {
-  //     year: 2032,
-  //     reward: "630000000000",
-  //     afterYear: 2042,
-  //     reward_2: "630000000000",
-  //   },
-  //   {
-  //     year: 2033,
-  //     reward: "630000000000",
-  //     afterYear: 2043,
-  //     reward_2: "630000000000",
-  //   },
-  // ];
-
-  /*  const tableData = {
-    labels: [
-      "60% Staking program",
-      "20% Available for Trade",
-      "10% CEX Listing",
-      "10% Marketing & Partnership",
-     
-    ],
-    datasets: [
-      {
-        // label: '# of Votes',
-        data: [
-          12600000000000, 4200000000000,
-          2100000000000, 2100000000000,
-        ],
-        backgroundColor: [
-          "rgba(255, 206, 86, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(75, 192, 192, 1)",
-        ],
-        borderColor: [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)",
-        ],
-        borderWidth: 1,
-      },
-    ],
-  }; */
 
   return (
-    <div className="max-w-7xl mt-10 sm:-mt-24 mx-auto font-baiJamjuree">
+    <div className="max-w-7xl mt-10 sm:-mt-24 mx-auto font-baiJamjuree" >
       <div>
         <div className="flex flex-col ">
           <div className="flex  justify-center ">
-            <img className=" mt-10" src={nanoBridge} alt="" />
+            <img className=" mt-10" src={nanoBridge} alt="" id="tokenomic" />
           </div>
-          <div className="w-[80%] mx-auto">
+          <div className="w-[80%] mx-auto" >
             <h1 className="text-center font-semibold text-[#333333] text-lg sm:text-4xl md:text-5xl lg:text-6xl">
               BITCOINNANO TOKENOMIC
             </h1>

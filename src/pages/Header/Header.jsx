@@ -45,15 +45,15 @@ export default function Header() {
 
     {
       menuText: "Vision",
-      path: "/",
+      path: "/#vision",
     },
     {
-      menuText: "Mission",
-      path: "/",
+      menuText: "Tokenomic",
+      path: "/#tokenomic",
     },
     {
       menuText: "Ecosystem",
-      path: "/",
+      path: "/ecosystem",
     },
     {
       menuText: "Community",
@@ -86,16 +86,16 @@ export default function Header() {
   };
 
   return (
-    <div className="bg-[#3e3e3e]  z-20 w-full top-0 right-0  fixed ">
+    <div className="bg-[#3e3e3e]  z-20 w-full top-0 right-0  fixed " >
       <header className="  shadow-md font-baiJamjuree">
         <div className="h-[100px]  flex justify-between   items-center max-w-7xl mx-auto px-2">
-          <Link to="/">
+          <a href="/#home">
             <div className="w-[200px]  ">
               <img className=" " alt="logo" src={logo} />
             </div>
-          </Link>
+          </a>
 
-          <div className="hidden sm:hidden md:inline lg:inline">
+          <div  className="hidden sm:hidden md:inline lg:inline">
             <form className="bg-[#4A4A4A] text-white text-lg  p-4 rounded-3xl flex items-center">
               <input
                 className="bg-[#4A4A4A] font-poppins focus:outline-none max-w-64 "
@@ -107,35 +107,31 @@ export default function Header() {
           </div>
           <div className="">
             <ul className="flex  text-xl text-white    gap-x-4 items-center">
-              <Link to="/">
+              <a  href="/#home">
                 <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
                   Home
                 </li>
-              </Link>
-              <Link to="/">
+              </a>
+              <a href="/#vision">
                 <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
                   Vision
                 </li>
-              </Link>
-              <Link to="/">
+              </a>
+              <a  href="/#tokenomic">
                 <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
-                  Mission
+                  Tokenomic
                 </li>
-              </Link>
-              <Link to="/#">
+              </a>
+              <a href="/#ecosystem">
                 <li className="hidden md:hidden lg:hidden xl:inline  sm:hidden hover:text-[#fc690b] transition duration-200">
                   Ecosystem
                 </li>
-              </Link>
+              </a>
 
               <NestedMenu
                 menuText="Community"
                 subMenu={[
-                  {
-                    subMenuText: "Discord",
-                    path: "/#",
-                    preIcon: <FaDiscord />,
-                  },
+                  
                   {
                     subMenuText: "Twitter",
                     path: "https://twitter.com/Smallbitcoin",
@@ -146,11 +142,7 @@ export default function Header() {
                     path: "https://t.me/bitcoinnanoworld",
                     preIcon: <FaTelegramPlane />,
                   },
-                  {
-                    subMenuText: "Youtube",
-                    path: "/#",
-                    preIcon: <FaYoutube />,
-                  },
+                 
                   { subMenuText: "Medium", path: "/#", preIcon: <FaMedium /> },
                 ]}
                 icon={<FaAngleDown className="inline" />}

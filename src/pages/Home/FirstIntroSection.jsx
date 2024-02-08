@@ -26,7 +26,7 @@ export default function FirstIntroSection() {
     partnerLogo_3,
   ];
   return (
-    <div
+    <div id="home"
       className="bg-cover bg-center bg-no-repeat mt-16 "
       style={{ backgroundImage: `url(${introBg})` }}>
       {/* first  */}
@@ -62,7 +62,7 @@ export default function FirstIntroSection() {
             className="h-[50px] sm:hidden  bg-center"
             style={{ backgroundImage: `url(${intro_pattern})` }}></div> */}
           {/* Second part */}
-          <div className="w-full  sm:w-1/2 sm:absolute top-0 right-0">
+          <div className="w-full  sm:w-1/2 sm:absolute top-0 right-0" >
             <div className="  relative flex items-center justify-center overflow-hidden">
               <img
                 className="absolute top-0 right-0 w-full h-full text-blue-500 
@@ -97,7 +97,7 @@ export default function FirstIntroSection() {
           className="hidden -z-10  lg:block absolute inset-0 bg-cover bg-center bg-no-repeat "
           style={{ backgroundImage: `url(${intro_pattern})` }}></div> */}
         <div className="  max-w-7xl mx-auto  p-0 sm:pt-8">
-          <div className="grid  grid-cols-2 gap-2 md:grid-cols-8 justify-items-center items-center  ">
+          <div id="vision" className="grid  grid-cols-2 gap-2 md:grid-cols-8 justify-items-center items-center  ">
             {partnerLogo.map((logo, index) => (
               <img key={index} className="w-[100px]   " src={logo} alt="" />
             ))}

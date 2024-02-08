@@ -1,26 +1,62 @@
 import React from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
-import avatar from "../../assets/avatar.svg";
+import exo_sys3 from "../../assets/RWA.png";
+import exo_sys1 from "../../assets/What-Is-Staking-400x300.png";
+import exo_sys2 from "../../assets/payment.png";
 
 export default function FourthSection() {
+  const ecosystem = document.getElementById('ecosystem');
+  ecosystem?.scrollIntoView({ behavior: 'smooth' });
+
+  const cardContent = [
+    {
+      img: exo_sys1,
+      catagories: "Staking Program (20 Years) ",
+      list: [
+        "1. Stake BNB will get NAN0",
+        "2. Stake BTC will get NAN0",
+        "3. Stake NAN0 will get NAN0",
+      ],
+    },
+    {
+      img: exo_sys2,
+      catagories: "Payment System",
+      list: ["1. Mobile App", "2. P2P/Online", "3. In-store/Offline"],
+    },
+    {
+      img: exo_sys3,
+      catagories: "Real World Asset",
+      list: ["1. Real Estate", "2. Vehicle", "3. Gold/NFT"],
+    },
+  ];
   return (
-    <div>
-      <div className=" max-w-7xl mx-auto font-baiJamjuree ">
-        <div className=" w-full sm:w-1/2 mx-auto -mb-32">
-          <img src={avatar} alt="" />
+    <div id="ecosystem">
+      <div className="max-w-7xl mx-auto py-8  font-baiJamjuree">
+        <div className="w-full sm:w-[90%] text-center mx-auto flex  justify-center flex-wrap gap-y-5 ">
+          <h1 className="text-xl sm:text-5xl py-2 font-semibold text-[#333333]">
+            Explore Bitcoinnano Ecosystem
+          </h1>
         </div>
-        {/* flex flex-col sm:flex-row  justify-center */}
-        <div style={{ background: 'radial-gradient(circle at top, #febd37, #efefef,#efefef)'}} className="gap-4 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 w-[85%] mx-auto  pt-40">
-          <div className=" flex flex-col  sm:items-end  gap-y-5">
-            <h1 className=" text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-[#333333] text-center">Community - Owned Chain</h1>
-            <button className="bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80 text-lg font-medium  rounded-lg text-white    p-4 px-8 gap-x-4 transition-transform transform hover:scale-95">
-              Join with Us <FaArrowRightLong  className="inline"/>
-            </button>
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="text-[#333333]">No VC, no pre-sale – just YOU. gOS token is the governance token for Bitcoinnano blockchain, functioning within a DAO framework. Holders of the $gOS token exercise collective decision-making authority over all modifications and enhancements to the Bitcoinnano blockchain.</p>
-          </div>
+        {/* card */}
+        <div className=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-2  gap-2 justify-items-center items-center">
+          {/* maping on card */}
+          {cardContent?.map((card, index) => (
+            <div key={index} className="flex flex-col gap-y-2 max-w-[350px]  bg-white border shadow-md p-4 rounded-xl">
+              <h1 className="text-center text-2xl font-semibold">
+                {card?.catagories}
+              </h1>
+              <img className="rounded" src={card?.img} alt="rpgs" />
+             <div className="flex flex-col gap-y-4 py-4">
+             {
+              card?.list.map((item,index)=>( <p className=" P-4 text-xl font-semibold text-[#feab2d]"> {item}</p>))
+             }
+             <button className="flex justify-between   bg-gradient-to-r from-[#fc690b] to-[#feab2d] hover:opacity-80 rounded text-white items-center  p-4 gap-x-4 transition-transform transform hover:scale-95">
+                Learn more
+              </button>
+             </div>
+            </div>
+          ))}
         </div>
+        
       </div>
     </div>
   );
