@@ -22,7 +22,7 @@ export default function SeventhSection() {
     {
       img: exo_sys3,
       catagories: "Real World Asset",
-      list: ["1. Real Estate", "2. Vechicle", "3. Gold/NFT"],
+      list: ["1. Real Estate", "2. Vehicle", "3. Gold/NFT"],
     },
   ];
   return (
