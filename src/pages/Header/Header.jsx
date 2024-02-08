@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsTwitterX } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
-import { FaDiscord, FaTelegramPlane, FaYoutube } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 import { FaAngleDown, FaArrowRightLong, FaMedium } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -25,23 +25,8 @@ export default function Header() {
   const smallDeviceMenu = [
     {
       menuText: "Home",
-      path: "/#",
+      path: "/#home",
     },
-    /* {
-      menuText: "Explore",
-      path: "/#",
-      isAccordion: true,
-      subMenu: [
-        { subMenuText: "Bitcoinnano Explorer", path: "/#" },
-        { subMenuText: "Bridge BTC/wBTC", path: "/#" },
-        { subMenuText: "Run a node", path: "/#" },
-        { subMenuText: "DAO Model", path: "/#" },
-      ],
-    }, */
-    /* {
-      menuText: "Docs",
-      path: "/#",
-    }, */
 
     {
       menuText: "Vision",
@@ -53,7 +38,7 @@ export default function Header() {
     },
     {
       menuText: "Ecosystem",
-      path: "/ecosystem",
+      path: "/#ecosystem",
     },
     {
       menuText: "Community",
@@ -67,10 +52,10 @@ export default function Header() {
         },
         {
           subMenuText: "Telegram",
-          link: "https://t.me/bitcoinnanoworld",
+          path: "https://t.me/bitcoinnanoworld",
           preIcon: <FaTelegramPlane />,
         },
-       
+
         { subMenuText: "Medium", path: "/#", preIcon: <FaMedium /> },
       ],
     },
@@ -85,7 +70,7 @@ export default function Header() {
   };
 
   return (
-    <div className="bg-[#3e3e3e]  z-20 w-full top-0 right-0  fixed " >
+    <div className="bg-[#3e3e3e]  z-20 w-full top-0 right-0  fixed ">
       <header className="  shadow-md font-baiJamjuree">
         <div className="h-[100px]  flex justify-between   items-center max-w-7xl mx-auto px-2">
           <a href="/#home">
@@ -94,7 +79,7 @@ export default function Header() {
             </div>
           </a>
 
-          <div  className="hidden sm:hidden md:inline lg:inline">
+          <div className="hidden sm:hidden md:inline lg:inline">
             <form className="bg-[#4A4A4A] text-white text-lg  p-4 rounded-3xl flex items-center">
               <input
                 className="bg-[#4A4A4A] font-poppins focus:outline-none max-w-64 "
@@ -106,7 +91,7 @@ export default function Header() {
           </div>
           <div className="">
             <ul className="flex  text-xl text-white    gap-x-4 items-center">
-              <a  href="/#home">
+              <a href="/#home">
                 <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
                   Home
                 </li>
@@ -116,7 +101,7 @@ export default function Header() {
                   Vision
                 </li>
               </a>
-              <a  href="/#tokenomic">
+              <a href="/#tokenomic">
                 <li className="hidden md:hidden lg:hidden xl:inline sm:hidden hover:text-[#fc690b] transition duration-200">
                   Tokenomic
                 </li>
@@ -130,7 +115,6 @@ export default function Header() {
               <NestedMenu
                 menuText="Community"
                 subMenu={[
-                  
                   {
                     subMenuText: "Twitter",
                     path: "https://twitter.com/BITCOINNAN0",
@@ -141,13 +125,12 @@ export default function Header() {
                     path: "https://t.me/bitcoinnanoworld",
                     preIcon: <FaTelegramPlane />,
                   },
-                 
+
                   { subMenuText: "Medium", path: "/#", preIcon: <FaMedium /> },
                 ]}
                 icon={<FaAngleDown className="inline" />}
                 link="/"></NestedMenu>
-              
-             
+
               <Link to="https://unisat.io/brc20/NAN0" className="">
                 <button className="group hidden sm:hiiden md:inline sm:p-2 h-[60px] bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl w-[200px] font-bold transition-transform transform border border-[#3e3e3e]  hover:border hover:border-white group-hover:transition group-hover:duration-700 ">
                   Buy NANO

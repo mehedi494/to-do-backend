@@ -41,7 +41,8 @@ const HamBurger = ({ isOpen, menus }) => {
               {isAccordionOpen && (
                 <div className="p-4 border-gray-50  flex flex-col gap-3  bg-[#333131]">
                   {menuItem.subMenu.map((item, index) => (
-                    <li className="text-white hover:text-[#fc690b]" key={index}>{item?.subMenuText}</li>
+                    <Link to={item?.path}>
+                    <li className="text-white hover:text-[#fc690b]" key={index}>{item?.subMenuText}</li></Link>
                   ))}
                 </div>
               )}
