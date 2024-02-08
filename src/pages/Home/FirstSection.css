@@ -3,7 +3,7 @@
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-20%);
   }
 }
 .animate-rightToLeft {

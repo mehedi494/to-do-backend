@@ -48,7 +48,7 @@ export default function FirstIntroSection() {
               Community!</p> 
               <p>Don't miss your life changing opportunity....!</p>
             </p>
-            <p className="pt-8 text-2xl sm:text-3xl lg:text-5xl  font-medium text-[#fc7411]  ">
+            <p className="pt-8 text-base sm:text-2xl md:text-xl lg:text-4xl  font-medium text-[#fc7411]  ">
               1,000,000,000 Nano 
               <img
                 className="w-[34px] inline"
