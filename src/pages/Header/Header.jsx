@@ -60,10 +60,9 @@ export default function Header() {
       path: "/",
       isAccordion: true,
       subMenu: [
-        { subMenuText: "Discord", path: "/#", preIcon: <FaDiscord /> },
         {
           subMenuText: "Twitter",
-          path: "https://twitter.com/Smallbitcoin",
+          path: "https://twitter.com/BITCOINNAN0",
           preIcon: <BsTwitterX />,
         },
         {
@@ -71,7 +70,7 @@ export default function Header() {
           link: "https://t.me/bitcoinnanoworld",
           preIcon: <FaTelegramPlane />,
         },
-        { subMenuText: "Youtube", path: "/#", preIcon: <FaYoutube /> },
+       
         { subMenuText: "Medium", path: "/#", preIcon: <FaMedium /> },
       ],
     },
@@ -134,7 +133,7 @@ export default function Header() {
                   
                   {
                     subMenuText: "Twitter",
-                    path: "https://twitter.com/Smallbitcoin",
+                    path: "https://twitter.com/BITCOINNAN0",
                     preIcon: <BsTwitterX />,
                   },
                   {
@@ -149,7 +148,7 @@ export default function Header() {
                 link="/"></NestedMenu>
               
              
-              <Link to="/#" className="">
+              <Link to="https://unisat.io/brc20/NAN0" className="">
                 <button className="group hidden sm:hiiden md:inline sm:p-2 h-[60px] bg-gradient-to-r from-[#fc690b] to-[#feab2d]  rounded-xl w-[200px] font-bold transition-transform transform border border-[#3e3e3e]  hover:border hover:border-white group-hover:transition group-hover:duration-700 ">
                   Buy NANO
                   <FaArrowRightLong className="inline ml-2 group-hover:translate-x-1 group-hover:transition-transform transform " />
