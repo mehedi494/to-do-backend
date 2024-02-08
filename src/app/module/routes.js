@@ -3,7 +3,7 @@ const { Controller } = require('./controller');
 const router = express.Router()
 
 router.post(
-  '/add-contact',
+  '/add-task',
   /* validateRequest(UserValidation.createStudentZodSchema), */
   /* auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN), */
   Controller.createContacts

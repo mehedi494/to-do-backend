@@ -1,38 +1,26 @@
+const { Schema, model } = require("mongoose");
+const taskSchema = new Schema(
+  {
+    taskName: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    description: {
+      type: String,
+      required: true,
+      trim: true,
+    },
 
-
-const  { Schema, model } =require('mongoose');
-const contactSchema =new Schema({
-  name:{
-    type:String,
-    required:true,
-    trim:true
+    isComplete: {
+      type: String,
+      default: "incomplete",
+    },
+    priority: {
+      type: String,
+      default: "medium",
+    },
   },
-  email:{
-    type:String,
-    trim:true
-  },
-  phone:{
-    type:String,
-    required:true,
-    trim:true,
-    unique:true
-    
-  },
-  img:{
-    type:String,
-    required:true,
-    trim:true
-  },
-  address:{
-    type:String,
-    required:true,
-    
-  },
- isFav: {
-  type:Boolean,
-  default:false
-
-  }
-
-},{timestamps:true})
-module.exports.Contacts =  model('contacts', contactSchema)
+  { timestamps: true }
+);
+module.exports.Task = model("task", taskSchema);

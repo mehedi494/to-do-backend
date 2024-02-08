@@ -16,7 +16,7 @@ try {
 const getAllContacts = async(req,res)=>{
 try {
   const result = await Service.getAllContacts()
-  console.log(result);
+  // console.log(result);
   res.json(result)
 } catch (error) {
   res.send (error)
@@ -44,9 +44,9 @@ try {
 }
 const deleteContact = async(req,res)=>{
 try {
-console.log(req.params);
+// console.log(req.params);
   const result = await Service.deleteContact(req.params)
-  console.log(result);
+  // console.log(result);
   res.json(result)
 } catch (error) {
   res.send (error)
