@@ -4,9 +4,9 @@ const {  Service } = require('./services');
 
 const createContacts = async(req,res)=>{
 try {
-  console.log(req.body);
+  // console.log(req.body);
   const result = await Service.createContacts(req.body)
-  console.log(result);
+  // console.log(result);
   res.json(result)
 } catch (error) {
   console.log(error);
@@ -25,7 +25,7 @@ try {
 const getSingleContact = async(req,res)=>{
 try {
   const result = await Service.getSingleContact(req.params)
-  console.log(result);
+  // console.log(result);
   res.json(result)
 } catch (error) {
   res.send (error)
@@ -33,10 +33,10 @@ try {
 }
 const updateContact = async(req,res)=>{
 try {
-  console.log(req.params,req.body);
+  // console.log(req.params,req.body);
 
   const result = await Service.updateContact(req.params,req.body)
-  console.log(result);
+  // console.log(result);
   res.json(result)
 } catch (error) {
   res.send (error)
